@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html>
+
+  
+ 
+  <style>
+  #content{
+    margin-top:50px;
+    margin-bottom:50px;
+  }
+    
+/* ---- grid ---- */
+
+.grid {
+    width:100%;
+  max-width: 100%;
+}
+
+/* clear fix */
+.grid:after {
+  content: '';
+  display: block;
+  clear: both;
+}
+
+.grid-sizer,
+.grid-item {
+  width: 33.333%;
+}
+
+.grid-item {
+  float: left;
+}
+
+.grid-item img {
+  display: block;
+  max-width: 100%;
+}
+
+</style>
+<link rel="stylesheet" href="style.css">
+
+
+<body>
+  
+  <div class="wrapper">
+  <div id="sidebar">
+  <h1><a href="/index.html">milaza</a></h1>
+  <div class="section" style="background-color:rgb(0, 163, 238)">portfolio</div>
+  <ul>
+  <li><a href="/3D.html">3D</a></li>
+  <li><a href="/2D.html">2D</a></li>
+  </ul>
+  <div class="section" style="background-color:rgb(0, 163, 238)">related</div>
+  <ul>
+    <li><a href="/project.html">projects</a></li>
+    <li><a href="/commission.html">commission</a></li>
+    <li><div class="tt">store<span class="ttt">coming soon!</span></div></li>
+    </ul>
+  <div class="section" style="background-color:rgb(0, 163, 238)">other</div>
+  <ul>
+    <li><a href="/misc.html">misc</a></li>
+    </ul>
+</div>
+
+<div id="topbar">
+  <h1><a href="/index.html">milaza</a></h1><div class="links"><a href="/3D.html">3D</a> / <a href="/2D.html">2D</a> / <a href="/project.html">projects</a> / <a href="/commission.html">commission</a> / <a href="/misc.html">misc</a></div>
+</div>
+  
+  <div id="content">
+        <div class="grid">
+          <div class="grid-sizer"></div>
+                <div class="grid-item">
+                  <img src="img\2D\2D_shinsoku.png" />
+                </div>
+                <div class="grid-item">
+                  <img src="img\2D\2D_jupiter.png" />
+                </div>
+        </div>
+
+  </div>
+  </div>
+
+  <script src="https://unpkg.com/masonry-layout@4/dist/masonry.pkgd.js"></script>
+  <script src="https://unpkg.com/imagesloaded@4/imagesloaded.pkgd.js"></script>
+  <script>
+    // init Masonry
+var grid = document.querySelector('.grid');
+
+var msnry = new Masonry( grid, {
+  itemSelector: '.grid-item',
+  columnWidth: '.grid-sizer',
+  percentPosition: true
+});
+
+imagesLoaded( grid ).on( 'progress', function() {
+  // layout Masonry after each image loads
+  msnry.layout();
+});
+        </script>
+
+</body>
+</html>
