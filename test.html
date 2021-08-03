@@ -1,0 +1,40 @@
+<html>
+    <head>
+        <link rel="stylesheet" href="dist/css/yBox.min.css">
+        <script src="dist/js/directive.js"></script>
+        <script src="dist/js/yBox.min.js"></script>
+    </head>
+    <body>
+        Link to another element on page (which contains an inner yBox link):
+        <a href="#link1" class="yBox">Click me</a> 
+
+        Link to an Iframe:
+        <a class="yBox yBox_iframe" href="https://www.youtube.com/watch?v=eEMpCcLm6NI&list=RDeEMpCcLm6NI&start_radio=1"></a>
+        
+        Custom yBox class:
+        <a href="#myLink" data-popup-class="popupWrapper" class="yBox" >Click me</a>
+        
+        AJAX call 
+        <a href="https://www.google.com" class="yBox yBox_ajax">Click me</a>
+        
+        Gallery view by groups: 
+        
+        <a href="img\2D\2D_yakuza.png" class="yBox" data-ybox-group="group1">
+            <img src="img\2D\2D_yakuza.png" alt="" width="200" />
+        </a>
+        <a href="/path_to_image2" class="yBox" data-ybox-group="group1">
+            <img src="/path_to_image2" alt="" width="200" />
+        </a>
+        <a href="/path_to_image3" class="yBox" data-ybox-group="group1">
+            <img src="/path_to_image3" alt="" width="200" />
+        </a>
+    <script>
+        window.onload = function(){
+            if(document.querySelector('.yBox')){
+                var myYbox = new yBox();
+                myYbox.init();
+            };
+        }
+    </script>
+    </body>
+    </html>

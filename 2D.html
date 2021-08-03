@@ -1,7 +1,11 @@
 <!DOCTYPE html>
 <html>
-
-  
+  <!-- lightbox -->
+  <head>
+    <link rel="stylesheet" href="dist/css/yBox.min.css">
+    <script src="dist/js/directive.js"></script>
+    <script src="dist/js/yBox.min.js"></script>
+  </head>
  
   <style>
   #content{
@@ -79,40 +83,45 @@
         <div class="grid">
           <div class="grid-sizer"></div>
                 <div class="grid-item">
-                  <img src="img\2D\2D_yakuza.png" />
+                      <a href="img\2D\2D_yakuza.png" class="yBox" data-ybox-group="group1">
+                          <img src="img\2D\2D_yakuza.png" alt="image" />
+                        </a>
                 </div>
                 <div class="grid-item">
-                  <img src="img\2D\2D_majiplush.png" />
+                    <a href="img\2D\2D_majiplush.png" class="yBox" data-ybox-group="group1">
+                        <img src="img\2D\2D_majiplush.png" alt="image" />
+                      </a>
                 </div>
                 <div class="grid-item">
+                  <a href="img\2D\2D_cave.png" class="yBox" data-ybox-group="group1">
                   <img src="img\2D\2D_cave.png" />
+                  </a>
                 </div>
                 <div class="grid-item">
-                  <img src="img\2D\2D_fatalfurry.png" />
+                    <a href="img\2D\2D_fatalfurry.png" class="yBox" data-ybox-group="group1"><img src="img\2D\2D_fatalfurry.png" /></a>
                 </div>
                 <div class="grid-item">
-                  <img src="img\2D\2D_onepiece.png" />
+                    <a href="img\2D\2D_onepiece.png" class="yBox" data-ybox-group="group1"><img src="img\2D\2D_onepiece.png" /></a>
                 </div>
                 <div class="grid-item">
-                  <img src="img\2D\2D_junepei.png" />
+                    <a href="img\2D\2D_junepei.png" class="yBox" data-ybox-group="group1"><img src="img\2D\2D_junepei.png" /></a>
                 </div>
                 <div class="grid-item">
-                  <img src="img\2D\2D_korekaramoaidoru.png" />
+                    <a href="img\2D\2D_korekaramoaidoru.png" class="yBox" data-ybox-group="group1"><img src="img\2D\2D_korekaramoaidoru.png" /></a>
                 </div>
                 <div class="grid-item">
-                  <img src="img\2D\2D_shinsoku.png" />
+                    <a href="img\2D\2D_shinsoku.png" class="yBox" data-ybox-group="group1"><img src="img\2D\2D_shinsoku.png" /></a>
                 </div>
                 <div class="grid-item">
-                  <img src="img\2D\2D_trucy.png" />
+                    <a href="img\2D\2D_trucy.png" class="yBox" data-ybox-group="group1"><img src="img\2D\2D_trucy.png" /></a>
                 </div>
                 <div class="grid-item">
-                  <img src="img\2D\2D_jupiter.png" />
+                    <a href="img\2D\2D_jupiter.png" class="yBox" data-ybox-group="group1"><img src="img\2D\2D_jupiter.png" /></a>
                 </div>
                 <div class="grid-item">
-                  <img src="img\2D\2D_ema.png" />
+                    <a href="img\2D\2D_ema.png" class="yBox" data-ybox-group="group1"><img src="img\2D\2D_ema.png" /></a>
                 </div>
         </div>
-
   </div>
   </div>
 
@@ -133,6 +142,39 @@ imagesLoaded( grid ).on( 'progress', function() {
   msnry.layout();
 });
         </script>
+
+<script>
+    window.onload = function(){
+        if(document.querySelector('.yBox')){
+            var myYbox = new yBox();
+            myYbox.init();
+        };
+    }
+</script>
+
+<script>
+    window.onload = function(){
+          let myYbox;
+      if(document.querySelector('.yBox')){
+        myYbox = new yBox();
+        myYbox.init();
+      }
+      
+      myYbox.onYboxOpen = function(){
+        document.body.classList.add('yBoxIsOpen');
+      }
+      myYbox.onYboxClose = function(){
+        document.body.classList.remove('yBoxIsOpen');
+      }
+      myYbox.onNextItemClick = function(){
+        console.log('next item clicked');
+      };
+      myYbox.onPrevItemClick = function(){
+        console.log('prev item clicked');
+      }
+    };
+  </script>
+
 
 </body>
 </html>
