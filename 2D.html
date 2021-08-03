@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html>
+        <script src="https://unpkg.com/masonry-layout@4/dist/masonry.pkgd.min.js"></script>
+  <style>
+  #content{
+    margin-top:50px;
+    margin-bottom:50px;
+    
+/* ---- grid ---- */
+
+.grid {
+    width:100%;
+  max-width: 100%;
+}
+
+/* clearfix */
+.grid:after {
+  content: '';
+  display: block;
+  clear: both;
+}
+
+.grid-item {
+  width: 33.333%;
+}
+
+.grid-item {
+  float: left;
+}
+
+.grid-item img {
+  display: block;
+  max-width: 100%;
+}
+
+  </style>
+<link rel="stylesheet" href="style.css">
+
+<body>
+  <div id="sidebar">
+  <h1><a href="/index.html">milaza</a></h1>
+  <div class="section" style="background-color:rgb(0, 163, 238)">portfolio</div>
+  <ul>
+  <li><a href="/3D.html">3D</a></li>
+  <li><a href="/2D.html">2D</a></li>
+  </ul>
+  <div class="section" style="background-color:rgb(0, 163, 238)">related</div>
+  <ul>
+    <li><a href="/project.html">projects</a></li>
+    <li><a href="/commission.html">commission</a></li>
+    <li><div class="tt">store<span class="ttt">coming soon!</span></div></li>
+    </ul>
+  <div class="section" style="background-color:rgb(0, 163, 238)">other</div>
+  <ul>
+    <li><a href="/misc.html">misc</a></li>
+    </ul>
+</div>
+  
+  <div id="content">
+        <div class="grid" data-masonry='{ "itemSelector": ".grid-item", "columnWidth": 160 }'>
+                <div class="grid-item">
+                  <img src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/82/orange-tree.jpg" />
+                </div>
+                <div class="grid-item">
+                  <img src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/82/submerged.jpg" />
+                </div>
+                <div class="grid-item">
+                  <img src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/82/look-out.jpg" />
+                </div>
+                <div class="grid-item">
+                  <img src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/82/one-world-trade.jpg" />
+                </div>
+                <div class="grid-item">
+                  <img src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/82/drizzle.jpg" />
+                </div>
+                <div class="grid-item">
+                  <img src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/82/cat-nose.jpg" />
+                </div>
+                <div class="grid-item">
+                  <img src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/82/contrail.jpg" />
+                </div>
+                <div class="grid-item">
+                  <img src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/82/golden-hour.jpg" />
+                </div>
+                <div class="grid-item">
+                  <img src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/82/flight-formation.jpg" />
+                </div>
+        </div>
+
+  </div>
+
+</body>
+</html>

@@ -57,6 +57,12 @@
   background: #555; 
 }
 
+/* ------ table ------*/
+
+td, th{
+  padding:10px;
+}
+
 /* ------ text styling ------*/
 
 body {
@@ -89,18 +95,17 @@ a{
 
 #sidebar{
   height: 100%;
-  width: 20%;
-  margin-left:50px;
+  width: 15%;
   position: fixed;
   z-index: 1;
   top: 0;
   left: 0;
   background-color:white;
-  padding:15px;
+  padding:50px;
 }
 
 #content{
-margin-left: 20%;
+float: right;
 width:80%;
-text-align: center;
+text-align: left;
 }
