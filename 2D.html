@@ -1,6 +1,6 @@
 <!DOCTYPE html>
 <html>
-        <script src="https://unpkg.com/masonry-layout@4/dist/masonry.pkgd.min.js"></script>
+ 
   <style>
   #content{
     margin-top:50px;
@@ -24,9 +24,6 @@
   width: 33.333%;
 }
 
-.grid-item {
-  float: left;
-}
 
 .grid-item img {
   display: block;
@@ -37,6 +34,14 @@
 <link rel="stylesheet" href="style.css">
 
 <body>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
+
+    <!-- Step 2: Then load imagesloaded. imagesloaded makes sure the images are not displayed until they are fully loaded -->
+    <script src="https://unpkg.com/imagesloaded@4/imagesloaded.pkgd.min.js"></script>
+    
+    <!-- Step 3: we load masonry -->
+    <script src="https://unpkg.com/masonry-layout@4/dist/masonry.pkgd.min.js"></script>
+
   <div id="sidebar">
   <h1><a href="/index.html">milaza</a></h1>
   <div class="section" style="background-color:rgb(0, 163, 238)">portfolio</div>
@@ -88,6 +93,14 @@
         </div>
 
   </div>
+
+  <script>
+    $(".grid").imagesLoaded(function() {
+        $(".grid").masonry({
+          itemSelector: ".grid-item"
+        });
+      });
+    </script>
 
 </body>
 </html>
