@@ -8,10 +8,9 @@
   </head>
  
   <style>
-  #content{
-    margin-top:50px;
-    margin-bottom:50px;
-  }
+    #content{
+      margin:0px;
+    }
     
 /* ---- grid ---- */
 
@@ -125,56 +124,34 @@
   </div>
   </div>
 
+  <!-- SCRIPTS-->
+
   <script src="https://unpkg.com/masonry-layout@4/dist/masonry.pkgd.js"></script>
   <script src="https://unpkg.com/imagesloaded@4/imagesloaded.pkgd.js"></script>
   <script>
     // init Masonry
-var grid = document.querySelector('.grid');
+    var grid = document.querySelector('.grid');
 
-var msnry = new Masonry( grid, {
-  itemSelector: '.grid-item',
-  columnWidth: '.grid-sizer',
-  percentPosition: true
-});
+    var msnry = new Masonry( grid, {
+      itemSelector: '.grid-item',
+      columnWidth: '.grid-sizer',
+      percentPosition: true
+    });
 
-imagesLoaded( grid ).on( 'progress', function() {
-  // layout Masonry after each image loads
-  msnry.layout();
-});
-        </script>
-
-<script>
-    window.onload = function(){
-        if(document.querySelector('.yBox')){
-            var myYbox = new yBox();
-            myYbox.init();
-        };
-    }
-</script>
-
-<script>
-    window.onload = function(){
-          let myYbox;
-      if(document.querySelector('.yBox')){
-        myYbox = new yBox();
-        myYbox.init();
-      }
-      
-      myYbox.onYboxOpen = function(){
-        document.body.classList.add('yBoxIsOpen');
-      }
-      myYbox.onYboxClose = function(){
-        document.body.classList.remove('yBoxIsOpen');
-      }
-      myYbox.onNextItemClick = function(){
-        console.log('next item clicked');
-      };
-      myYbox.onPrevItemClick = function(){
-        console.log('prev item clicked');
-      }
-    };
+    imagesLoaded( grid ).on( 'progress', function() {
+      // layout Masonry after each image loads
+      msnry.layout();
+    });
   </script>
 
+  <script>
+      window.onload = function(){
+          if(document.querySelector('.yBox')){
+              var myYbox = new yBox();
+              myYbox.init();
+          };
+      }
+  </script>
 
 </body>
 </html>

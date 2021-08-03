@@ -57,6 +57,22 @@
   background: #555; 
 }
 
+/* ------ button ------*/
+
+.button-wrapper{
+  display:grid;
+  grid-template-columns:1fr 1fr 1fr 1fr 1fr;
+}
+
+.button{
+  padding:5px;
+  background-color:white;
+  z-index: 5;
+  color: rgb(0, 163, 238);
+  font-size:1.875em;
+  margin: 5px;
+}
+
 /* ------ table ------*/
 
 td, th{
@@ -66,23 +82,23 @@ td, th{
 /* ------ text styling ------*/
 
 body {
-  font-family: Helvetica Neue,Helvetica,Arial,sans-serif !important;
+  font-family: Arial,sans-serif !important;
 }
 
 .section{
-    font-size:20px;
+    font-size:1.875em;
     font-weight: bold;
     padding: 0.25em .5em;
     clip-path: polygon(0 0, 100% 0%, 90% 100%, 0% 100%);
     color:white;
-    font-family:arial;
     margin:5px;
     width:50%
 }
 
 #sidebar #topbar h1{
-  font-size: 50px;
+  font-size: 2.65em;
   color:rgb(0, 163, 238);
+  text-shadow: 3px 3px 3px #ababab;
 }
 
 a{
@@ -113,10 +129,20 @@ a{
 
 #content{
 text-align: left;
+margin-top:50px;
+margin-bottom:50px;
 }
 
 @media only screen and (max-width: 1440px) {
-  
+
+  #content{
+    text-align: left;
+    margin-top:50px;
+    margin-bottom:50px;
+    margin-left:25px;
+    margin-right:25px;
+  }
+
   .wrapper{
     display: grid;
     grid-template-columns:1fr;
@@ -135,16 +161,12 @@ text-align: left;
     text-align: center;
   }
 
-  #topbar a{
-    color: white;
-  }
-
   .links{
-    font-size: 20px;
+    font-size: 1.875em;
   }
 
-  #topbar h1{
+  #topbar h1 a{
     color: rgb(255, 255, 255);
-    font-size: 70px;
+    font-size: 2.65em;
   }
 }
