@@ -101,6 +101,10 @@ a{
 #sidebar{
   background-color:white;
   padding:50px;
+  position: sticky;
+  top: 0;
+  height: 100vh;
+  box-sizing: border-box;
 }
 
 #topbar{
@@ -135,8 +139,12 @@ text-align: left;
     color: white;
   }
 
+  .links{
+    font-size: 20px;
+  }
+
   #topbar h1{
     color: rgb(255, 255, 255);
-    font-size: 50px;
+    font-size: 70px;
   }
 }
