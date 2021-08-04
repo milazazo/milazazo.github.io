@@ -73,6 +73,15 @@
   margin: 5px;
 }
 
+.button-grey{
+  padding:5px;
+  background-color:grey;
+  z-index: 5;
+  color: white;
+  font-size:1em;
+  margin: 5px;
+}
+
 /* ------ table ------*/
 
 td, th{
