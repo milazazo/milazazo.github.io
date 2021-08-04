@@ -1,15 +1,6 @@
 <!DOCTYPE html>
 <html>
   <style>
-  .intro-wrapper{
-    display:grid;
-    grid-template-columns:1fr 2fr;
-    width:90%;
-    }
-  .intro div{
-      padding: 15px;
-  }
-
   .section-wrapper{
     display:grid;
     grid-template-columns: 1fr 1fr;
@@ -37,47 +28,57 @@
   }
   </style>
 <link rel="stylesheet" href="style.css">
+<script src="index.js"></script>
 <body>
   <div class="wrapper">
-  <div id="sidebar">
-  <h1><a href="/index.html">milaza</a></h1>
-  <div class="section" style="background-color:rgb(0, 163, 238)">PORTFOLIO</div>
-  <ul>
-  <li><a href="/3D.html">3D</a></li>
-  <li><a href="/2D.html">2D</a></li>
-  </ul>
-  <div class="section" style="background-color:rgb(0, 163, 238)">RELATED</div>
-  <ul>
-    <li><a href="/project.html">Project</a></li>
-    <li><a href="/commission.html">Commission</a></li>
-    <li><div class="tt">Store<span class="ttt">Coming Soon!</span></div></li>
-    </ul>
-  <div class="section" style="background-color:rgb(0, 163, 238)">OTHER</div>
-  <ul>
-    <li><a href="/misc.html">Misc.</a></li>
-    </ul>
-</div>
 
-<div id="topbar">
-  <h1><a href="/index.html">milaza</a></h1>
-  <div class="button-wrapper"><a href="/3D.html" class="button">3D</a> <a href="/2D.html" class="button">2D</a> <a href="/project.html" class="button">PROJECT</a> <a href="/commission.html" class="button">COMMISSION</a> <a href="/misc.html" class="button">MISC.</a></div>
-</div>
-  
-  <div id="content">
-    <div class="intro-wrapper">
-      <div style="text-align:center"><img src="https://cdn-ak.f.st-hatena.com/images/fotolife/m/milaza/20201009/20201009101115.png" style="width:300px"></div>
-      <div style="font-size:1.5em">I'm <b>Clay</b> (A.K.A <b>milaza</b>). I'm currently a 3D animation student based in New Zealand, with hopes of working as a 3D environment artist for gaming in the future. I like newspaper comics and pro wrestling. Nice to meet you!
-      <hr>
-        <div class="button-wrapper" style="text-align:center"><a href="https://www.twitter.com/milaza_zo" class="button-grey">TWITTER</a> <a href="https://milaza.tumblr.com" class="button-grey">TUMBLR</a> <a href="/https://www.artstation.com/andreyang" class="button-grey">ARTSTATION</a> <a href="https://www.twitter.com/milaza_zo" class="button-grey">PIXIV</a> <a href="https://www.twitter.com/milaza_zo" class="button-grey">SKETCHFAB</a></div></div>
+    <!-- DESKTOP MENU -->
+    <div id="sidebar">
+    <h1><a href="/index.html">milaza</a></h1>
+    <div class="section" style="background-color:rgb(0, 163, 238)">PORTFOLIO</div>
+    <ul>
+    <li><a href="/3D.html">3D</a></li>
+    <li><a href="/2D.html">2D</a></li>
+    </ul>
+    <div class="section" style="background-color:rgb(0, 163, 238)">RELATED</div>
+    <ul>
+      <li><a href="/project.html">Project</a></li>
+      <li><a href="/commission.html">Commission</a></li>
+      <li><div class="tt">Store<span class="ttt">Coming Soon!</span></div></li>
+      </ul>
+    <div class="section" style="background-color:rgb(0, 163, 238)">OTHER</div>
+    <ul>
+      <li><a href="/misc.html">Misc.</a></li>
+      </ul>
     </div>
 
+<!-- MOBILE MENU -->
+    <div id="topbar">
+      <div id="hamburg" onclick="openMenu()">☰</div>
+      <h1><a href="/index.html">milaza</a></h1> 
+      <div id="mobile-menu" style="display:none">
+          <div class="button-wrapper">
+            <a href="/3D.html" class="button-menu">3D</a>
+            <a href="/2D.html" class="button-menu">2D</a>
+            <a href="/project.html" class="button-menu">PROJECT</a>
+            <a href="/commission.html" class="button-menu">COMMISSION</a>
+            <a href="/misc.html" class="button-menu">MISC.</a>
+          </div>
+      </div>
+    </div>
+  
+  <div id="content">
+
+    <div id="splash"><img src="img\splash_a.png"></div>
+
     <div class="section-wrapper">
-      <div class="box" style="background-color:rgb(231, 231, 231)"><div class="section" style="background-color:rgb(0, 163, 238)">F.A.Q</div>
-      Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam et egestas eros. In ullamcorper, dui sed malesuada eleifend, quam magna iaculis sem, vitae pretium mi nisl id ipsum. Suspendisse non justo vitae nulla ornare pharetra quis sit amet massa. Pellentesque et leo quam. Suspendisse turpis ipsum, egestas ut arcu sed, laoreet sagittis dolor. Integer elementum vel nunc quis vestibulum. Maecenas ultrices neque ut convallis consectetur. Aenean sapien tellus, consequat sed convallis ut, volutpat sed nunc. Integer sodales mauris id lectus ornare, maximus eleifend erat euismod. Mauris et efficitur odio. Vestibulum eleifend est vitae odio posuere, non elementum purus pharetra. Phasellus non turpis ipsum.
+      <div class="box" style="background-color:rgb(231, 231, 231)"><div class="section" style="background-color:rgb(0, 163, 238)">ABOUT</div>
+      I'm <b>Clay</b> (A.K.A <b>milaza</b>). I'm currently a 3D animation student based in New Zealand, with hopes of working as a 3D environment artist for gaming in the future. I like newspaper comics and pro wrestling. Nice to meet you!
       </div>
       <div class="box" style="background-color:rgb(231, 231, 231)"><div class="section" style="background-color:rgb(0, 163, 238)">something idk</div>
       </div>
     </div>
+    <div class="button-wrapper" style="text-align:center"><a href="https://www.twitter.com/milaza_zo" class="button-grey">TWITTER</a> <a href="https://milaza.tumblr.com" class="button-grey">TUMBLR</a> <a href="/https://www.artstation.com/andreyang" class="button-grey">ARTSTATION</a> <a href="https://www.twitter.com/milaza_zo" class="button-grey">PIXIV</a> <a href="https://www.twitter.com/milaza_zo" class="button-grey">SKETCHFAB</a></div></div>
 
 
 
