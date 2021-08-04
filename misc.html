@@ -2,46 +2,74 @@
 <html>
   <script src="index.js"></script>
   <link rel="stylesheet" href="style.css">
+  <style>
+  .section-wrapper{
+    display:grid;
+    grid-template-columns: 1fr 1fr;
+  }
+
+  @media only screen and (max-width: 1440px) {
+    .section-wrapper{
+    display:grid;
+    grid-template-columns: 1fr;
+  }
+
+  }
+  </style>
 <body>
   <div class="wrapper">
-    <!-- DESKTOP MENU -->
-    <div id="sidebar">
-      <h1><a href="/index.html">milaza</a></h1>
-      <div class="section"">PORTFOLIO</div>
-      <ul>
-      <li><a href="/3D.html">3D</a></li>
-      <li><a href="/2D.html">2D</a></li>
+  <!-- DESKTOP MENU -->
+  <div id="sidebar">
+    <h1><a href="/index.html">milaza</a></h1>
+    <div class="section"">PORTFOLIO</div>
+    <ul>
+    <li><a href="/3D.html">3D</a></li>
+    <li><a href="/2D.html">2D</a></li>
+    </ul>
+    <div class="section"">RELATED</div>
+    <ul>
+      <li><a href="/project.html">Project</a></li>
+      <li><a href="/commission.html">Commission</a></li>
+      <li><div class="tt">Store<span class="ttt">Coming Soon!</span></div></li>
       </ul>
-      <div class="section"">RELATED</div>
-      <ul>
-        <li><a href="/project.html">Project</a></li>
-        <li><a href="/commission.html">Commission</a></li>
-        <li><div class="tt">Store<span class="ttt">Coming Soon!</span></div></li>
-        </ul>
-      <div class="section"">OTHER</div>
-      <ul>
-        <li><a href="/misc.html">Misc.</a></li>
-        </ul>
+    <div class="section"">OTHER</div>
+    <ul>
+      <li><a href="/misc.html">Misc.</a></li>
+      </ul>
+    </div>
+
+<!-- MOBILE MENU -->
+    <div id="topbar">
+      <div id="hamburg" onclick="openMenu()">☰</div>
+      <h1><a href="/index.html">milaza</a></h1> 
+      <div id="mobile-menu" style="display:none">
+          <div class="button-wrapper">
+            <a href="/3D.html" class="button-menu">3D</a>
+            <a href="/2D.html" class="button-menu">2D</a>
+            <a href="/project.html" class="button-menu">PROJECT</a>
+            <div class="tt button-menu">STORE<span class="ttt">Coming Soon!</span></div>
+            <a href="/commission.html" class="button-menu">COMMISSION</a>
+            <a href="/misc.html" class="button-menu">MISC.</a>
+          </div>
       </div>
-  
-  <!-- MOBILE MENU -->
-      <div id="topbar">
-        <div id="hamburg" onclick="openMenu()">☰</div>
-        <h1><a href="/index.html">milaza</a></h1> 
-        <div id="mobile-menu" style="display:none">
-            <div class="button-wrapper">
-              <a href="/3D.html" class="button-menu">3D</a>
-              <a href="/2D.html" class="button-menu">2D</a>
-              <a href="/project.html" class="button-menu">PROJECT</a>
-              <div class="tt button-menu">STORE<span class="ttt">Coming Soon!</span></div>
-              <a href="/commission.html" class="button-menu">COMMISSION</a>
-              <a href="/misc.html" class="button-menu">MISC.</a>
-            </div>
-        </div>
-      </div>
+    </div>
   
   <div id="content">
-   TBA.
+    <div class="button-wrapper" style="grid-template-columns:1fr 1fr">
+      <div class="button-big">LOG</div>
+      <div class="button-big">iM@S</div>
+      <div class="button-big">FANBOOK</div>
+      <div class="button-big">???</div>
+      </div>
+
+      <div class="section-wrapper">
+        <div class="box"><div class="section">???</div>
+        ffffff
+      </div>
+      <div class="box"><div class="section">???</div>
+      test
+      </div>
+      </div>
   </div>
 </div>
 </body>
