@@ -2,14 +2,21 @@
 <html>
   <meta name="viewport" content="width=device-width, user-scalable=no">
   <style>
-  .intro{
-      width:60%;
-      margin-top:10%;
-      margin-left:10%;
+  .intro-wrapper{
+    display:grid;
+    grid-template-columns:1fr 2fr;
+    width:80%;
     }
-  .intro td{
+  .intro div{
       padding: 15px;
-      text-align:left;
+  }
+
+  @media only screen and (max-width: 1440px) {
+    .intro-wrapper{
+    display:grid;
+    grid-template-columns:1fr;
+    width:100%;
+    }
   }
   </style>
 <link rel="stylesheet" href="style.css">
@@ -40,14 +47,10 @@
 </div>
   
   <div id="content">
-    <table class="intro">
-      <tr>
-        <td style="width:20%"><img src="https://cdn-ak.f.st-hatena.com/images/fotolife/m/milaza/20201009/20201009101115.png" width="200px"></td>
-        <td><span style="font-size:20px">I'm <b>Clay</b> (A.K.A <b>milaza</b>). I'm currently a 3D animation student based in New Zealand, with hopes of working as a 3D environment artist for gaming in the future. I like newspaper comics and pro wrestling. Nice to meet you!</span>
-        <hr>
-        <a href="https://www.twitter.com/milaza_zo">Twitter</a> / <a href="https://milaza.tumblr.com">Tumblr</a> / <a href="https://www.artstation.com/andreyang">ArtStation</a> / <a href="https://www.pixiv.net/en/users/15196346/artworks">Pixiv</a></td>
-      </tr>
-      </table>
+    <div class="intro-wrapper">
+      <div style="text-align:center"><img src="https://cdn-ak.f.st-hatena.com/images/fotolife/m/milaza/20201009/20201009101115.png" style="width:300px"></div>
+      <div style="font-size:1.5em">I'm Clay (A.K.A milaza). I'm currently a 3D animation student based in New Zealand, with hopes of working as a 3D environment artist for gaming in the future. I like newspaper comics and pro wrestling. Nice to meet you!</div>
+    </div>
   </div>
 </div>
 
