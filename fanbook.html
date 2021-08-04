@@ -1,13 +1,15 @@
 <!DOCTYPE html>
 <html>
 
-  
+  <!-- lightbox -->
+  <link rel="stylesheet" href="dist/css/yBox.min.css">
+  <script src="dist/js/directive.js"></script>
+  <script src="dist/js/yBox.min.js"></script>
+
+  <script src="index.js"></script>
+  <link rel="stylesheet" href="style.css">
  
   <style>
-  #content{
-    margin-top:50px;
-    margin-bottom:50px;
-  }
     
 /* ---- grid ---- */
 
@@ -46,75 +48,98 @@
 }
 
 </style>
-<link rel="stylesheet" href="style.css">
 
 
 <body>
   
   <div class="wrapper">
+  <!-- DESKTOP MENU -->
   <div id="sidebar">
-  <h1><a href="/index.html">milaza</a></h1>
-  <div class="section" style="background-color:rgb(0, 163, 238)">portfolio</div>
-  <ul>
-  <li><a href="/3D.html">3D</a></li>
-  <li><a href="/2D.html">2D</a></li>
-  </ul>
-  <div class="section" style="background-color:rgb(0, 163, 238)">related</div>
-  <ul>
-    <li><a href="/project.html">projects</a></li>
-    <li><a href="/commission.html">commission</a></li>
-    <li><div class="tt">store<span class="ttt">coming soon!</span></div></li>
+    <h1><a href="/index.html">milaza</a></h1>
+    <div class="section" style="background-color:rgb(0, 163, 238)">PORTFOLIO</div>
+    <ul>
+    <li><a href="/3D.html">3D</a></li>
+    <li><a href="/2D.html">2D</a></li>
     </ul>
-  <div class="section" style="background-color:rgb(0, 163, 238)">other</div>
-  <ul>
-    <li><a href="/misc.html">misc</a></li>
-    </ul>
-</div>
+    <div class="section" style="background-color:rgb(0, 163, 238)">RELATED</div>
+    <ul>
+      <li><a href="/project.html">Project</a></li>
+      <li><a href="/commission.html">Commission</a></li>
+      <li><div class="tt">Store<span class="ttt">Coming Soon!</span></div></li>
+      </ul>
+    <div class="section" style="background-color:rgb(0, 163, 238)">OTHER</div>
+    <ul>
+      <li><a href="/misc.html">Misc.</a></li>
+      </ul>
+    </div>
 
-<div id="topbar">
-  <h1><a href="/index.html">milaza</a></h1><div class="links"><a href="/3D.html">3D</a> / <a href="/2D.html">2D</a> / <a href="/project.html">projects</a> / <a href="/commission.html">commission</a> / <a href="/misc.html">misc</a></div>
-</div>
+<!-- MOBILE MENU -->
+    <div id="topbar">
+      <div id="hamburg" onclick="openMenu()">☰</div>
+      <h1><a href="/index.html">milaza</a></h1> 
+      <div id="mobile-menu" style="display:none">
+          <div class="button-wrapper">
+            <a href="/3D.html" class="button-menu">3D</a>
+            <a href="/2D.html" class="button-menu">2D</a>
+            <a href="/project.html" class="button-menu">PROJECT</a>
+            <div class="tt button-menu">STORE<span class="ttt">Coming Soon!</span></div>
+            <a href="/commission.html" class="button-menu">COMMISSION</a>
+            <a href="/misc.html" class="button-menu">MISC.</a>
+          </div>
+      </div>
+    </div>
   
   <div id="content">
         <div class="grid">
           <div class="grid-sizer"></div>
                 <div class="grid-item">
-                  <img src="img\2D\2D_shinsoku.png" />
+                  <a href="img\2D\2D_shinsoku.png" class="yBox" data-ybox-group="group1"><img src="img\2D\2D_shinsoku.png" /></a>
                 </div>
                 <div class="grid-item">
-                  <img src="img\2D\2D_jupiter.png" />
+                  <a href="img\2D\2D_jupiter.png" class="yBox" data-ybox-group="group1"><img src="img\2D\2D_jupiter.png" /></a>
                 </div>
                 <div class="grid-item">
-                  <img src="img\2D\2D_tobehappyand.png" />
+                  <a href="img\2D\2D_tobehappyand.png" class="yBox" data-ybox-group="group1"><img src="img\2D\2D_tobehappyand.png" /></a>
                 </div>
                 <div class="grid-item">
-                  <img src="img\2D\2D_saiki.png" />
+                  <a href="img\2D\2D_saiki.png" class="yBox" data-ybox-group="group1"><img src="img\2D\2D_saiki.png" /></a>
                 </div>
                 <div class="grid-item">
-                  <img src="img\2D\2D_aai2.png" />
+                  <a href="img\2D\2D_aai2.png" class="yBox" data-ybox-group="group1"><img src="img\2D\2D_aai2.png" /></a>
                 </div>
         </div>
 
   </div>
   </div>
 
+  <!-- SCRIPTS-->
+
   <script src="https://unpkg.com/masonry-layout@4/dist/masonry.pkgd.js"></script>
   <script src="https://unpkg.com/imagesloaded@4/imagesloaded.pkgd.js"></script>
   <script>
     // init Masonry
-var grid = document.querySelector('.grid');
+    var grid = document.querySelector('.grid');
 
-var msnry = new Masonry( grid, {
-  itemSelector: '.grid-item',
-  columnWidth: '.grid-sizer',
-  percentPosition: true
-});
+    var msnry = new Masonry( grid, {
+      itemSelector: '.grid-item',
+      columnWidth: '.grid-sizer',
+      percentPosition: true
+    });
 
-imagesLoaded( grid ).on( 'progress', function() {
-  // layout Masonry after each image loads
-  msnry.layout();
-});
-        </script>
+    imagesLoaded( grid ).on( 'progress', function() {
+      // layout Masonry after each image loads
+      msnry.layout();
+    });
+  </script>
+
+  <script>
+      window.onload = function(){
+          if(document.querySelector('.yBox')){
+              var myYbox = new yBox();
+              myYbox.init();
+          };
+      }
+  </script>
 
 </body>
 </html>

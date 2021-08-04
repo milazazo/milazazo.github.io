@@ -1,80 +1,123 @@
 <!DOCTYPE html>
 <html>
-  <style>
-  #content{
-    margin-top:50px;
-    margin-bottom:50px;
+  <!-- lightbox -->
+  <link rel="stylesheet" href="dist/css/yBox.min.css">
+  <script src="dist/js/directive.js"></script>
+  <script src="dist/js/yBox.min.js"></script>
+
+  <script src="index.js"></script>
+<link rel="stylesheet" href="style.css">
+
+<style>
+  .section-wrapper{
+    display:grid;
+    grid-template-columns: 2fr 1fr;
+  }
+
+  .section-wrapper-2{
+    display:grid;
+    grid-template-columns: 1fr;
+  }
+
+  @media only screen and (max-width: 1440px) {
+    .section-wrapper{
+    display:grid;
+    grid-template-columns: 1fr;
+  }
+
   }
   </style>
-<link rel="stylesheet" href="style.css">
 <body>
   <div class="wrapper">
+  <!-- DESKTOP MENU -->
   <div id="sidebar">
-  <h1><a href="/index.html">milaza</a></h1>
-  <div class="section" style="background-color:rgb(0, 163, 238)">portfolio</div>
-  <ul>
-  <li><a href="/3D.html">3D</a></li>
-  <li><a href="/2D.html">2D</a></li>
-  </ul>
-  <div class="section" style="background-color:rgb(0, 163, 238)">related</div>
-  <ul>
-    <li><a href="/project.html">projects</a></li>
-    <li><a href="/commission.html">commission</a></li>
-    <li><div class="tt">store<span class="ttt">coming soon!</span></div></li>
+    <h1><a href="/index.html">milaza</a></h1>
+    <div class="section"">PORTFOLIO</div>
+    <ul>
+    <li><a href="/3D.html">3D</a></li>
+    <li><a href="/2D.html">2D</a></li>
     </ul>
-  <div class="section" style="background-color:rgb(0, 163, 238)">other</div>
-  <ul>
-    <li><a href="/misc.html">misc</a></li>
-    </ul>
-</div>
+    <div class="section"">RELATED</div>
+    <ul>
+      <li><a href="/project.html">Project</a></li>
+      <li><a href="/commission.html">Commission</a></li>
+      <li><div class="tt">Store<span class="ttt">Coming Soon!</span></div></li>
+      </ul>
+    <div class="section"">OTHER</div>
+    <ul>
+      <li><a href="/misc.html">Misc.</a></li>
+      </ul>
+    </div>
 
-<div id="topbar">
-  <h1><a href="/index.html">milaza</a></h1><div class="links"><a href="/3D.html">3D</a> / <a href="/2D.html">2D</a> / <a href="/project.html">projects</a> / <a href="/commission.html">commission</a> / <a href="/misc.html">misc</a></div>
-</div>
+<!-- MOBILE MENU -->
+    <div id="topbar">
+      <div id="hamburg" onclick="openMenu()">☰</div>
+      <h1><a href="/index.html">milaza</a></h1> 
+      <div id="mobile-menu" style="display:none">
+          <div class="button-wrapper">
+            <a href="/3D.html" class="button-menu">3D</a>
+            <a href="/2D.html" class="button-menu">2D</a>
+            <a href="/project.html" class="button-menu">PROJECT</a>
+            <div class="tt button-menu">STORE<span class="ttt">Coming Soon!</span></div>
+            <a href="/commission.html" class="button-menu">COMMISSION</a>
+            <a href="/misc.html" class="button-menu">MISC.</a>
+          </div>
+      </div>
+    </div>
   
   <div id="content">
-    <h1>2D Commission Info</h1>
-    Please email <b>clayterrans@gmail.com</b> if interested. I don’t check Twitter often.
-    <br>All prices in USD. PayPal only. Commercial commissions are at least 2× listed price.
-    <br>Backgrounds and comics available. Message me about it!
-    <br><br>Full information and T.O.S <a href="#tos">below</a>.
-    <br><br><b>Personal (non-commercial) commissions under $120 currently closed.</b>
-    <br><br>
-    <table>
-      <tr>
-        <th>Style</th>
-        <th>Head</th>
-        <th>Half</th>
-        <th>Full</th>
-      </tr>
-      <tr>
-        <td>Cel-Shaded</td>
-        <td>35</td>
-        <td>50</td>
-        <td>60</td>
-      </tr>
-      <tr>
-        <td>Rendered</td>
-        <td>60</td>
-        <td>120</td>
-        <td>180</td>
-      </tr>
-      <tr>
-        <td>Lineless</td>
-        <td>10</td>
-        <td>15</td>
-        <td>20</td>
+    <div class="section-wrapper">
+      <div class="box"><div class="section"">2D COMMISSION INFO</div>
+        Please email <b>clayterrans@gmail.com</b> if interested. I don’t check Twitter often.
+        <br>All prices in USD. PayPal only. Commercial commissions are at least 2× listed price.
+        <br>Backgrounds and comics available. Message me about it!
+        <br><br>Full information and T.O.S <a href="#tos">below</a>.
+        <br><br><b>Personal (non-commercial) commissions under $120 currently closed.</b>
+        <br><br>
+      </div>
+
+      <div class="box"><div class="section"">PRICES</div>
+      <table>
+        <tr>
+          <th>Style</th>
+          <th>Head</th>
+          <th>Half</th>
+          <th>Full</th>
         </tr>
-    </table>
-    <h2>Past Commission Sample</h2>
-    <img src="https://milazazo.files.wordpress.com/2021/07/nate-small-1.png" style="height:200px">
-    <img src="https://milazazo.files.wordpress.com/2021/07/yorkie-1.png?w=1024" style="height:200px">
-    <img src="https://milazazo.files.wordpress.com/2021/07/mizael-1.png?w=1001" style="height:200px">
-    <img src="https://milazazo.files.wordpress.com/2021/07/toumafuyu-1.png?w=819" style="height:200px">
-    <img src="https://milazazo.files.wordpress.com/2021/07/lucie-1.png" style="height:200px">
-    <img src="https://milazazo.files.wordpress.com/2021/07/k.png?w=768" style="height:200px">
-    <div id="tos"><h2>Terms of Service</h2></div>
-    Content:
+        <tr>
+          <td>Cel-Shaded</td>
+          <td>35</td>
+          <td>50</td>
+          <td>60</td>
+        </tr>
+        <tr>
+          <td>Rendered</td>
+          <td>60</td>
+          <td>120</td>
+          <td>180</td>
+        </tr>
+        <tr>
+          <td>Lineless</td>
+          <td>10</td>
+          <td>15</td>
+          <td>20</td>
+          </tr>
+      </table>
+      </div>
+    </div>
+    <div class="section-wrapper-2">
+      <div class="box"><div class="section"">PAST COMMISSION SAMPLE</div>
+      <a href="img\comm_a.png" class="yBox" data-ybox-group="group1"><img src="img\comm_a.png" style="height:200px" /></a>
+      <a href="img\comm_b.png" class="yBox" data-ybox-group="group1"><img src="img\comm_b.png" style="height:200px" /></a>
+      <a href="img\comm_c.png" class="yBox" data-ybox-group="group1"><img src="img\comm_c.png" style="height:200px" /></a>
+      <a href="img\comm_d.png" class="yBox" data-ybox-group="group1"><img src="img\comm_d.png" style="height:200px" /></a>
+      <a href="img\comm_e.png" class="yBox" data-ybox-group="group1"><img src="img\comm_e.png" style="height:200px" /></a>
+      <a href="img\comm_f.png" class="yBox" data-ybox-group="group1"><img src="img\comm_f.png" style="height:200px" /></a>
+      </div>
+    </div>
+    <div class="section-wrapper-2">
+      <div class="box"><div class="section" id="tos">TERMS OF SERVICE</div>
+      Content:
     <ul>
       <li>Any subject matter is OK, aside from: offensive works, real-person shipping, heavy gore and explicit NSFW.</li>
       <li>Please provide reference of the character/person.</li>
@@ -93,7 +136,19 @@
     <ul>
         <li>If it's a personal commission, you're free to use it for whatever you want on any social media. Credit is appreciated.</li>
       </ul>
+      </div>
+    </div>
+    
   </div>
 </div>
+
+<script>
+  window.onload = function(){
+      if(document.querySelector('.yBox')){
+          var myYbox = new yBox();
+          myYbox.init();
+      };
+  }
+</script>
 </body>
 </html>

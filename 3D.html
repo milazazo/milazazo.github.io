@@ -1,12 +1,11 @@
 <!DOCTYPE html>
 <html>
+  <!-- lightbox -->
+  <link rel="stylesheet" href="dist/css/yBox.min.css">
+  <script src="dist/js/directive.js"></script>
+  <script src="dist/js/yBox.min.js"></script>
 <script src="index.js"></script>
 <link rel="stylesheet" href="style.css">
-<style>
-    #content{
-      margin:0px;
-    }
-</style>
 <body>
   <div class="wrapper">
   <!-- DESKTOP MENU -->
@@ -46,15 +45,25 @@
     </div>
   
   <div id="content">
-    <img src="https://milazazo.files.wordpress.com/2021/07/onsen2.png" style="width:100%; max-width: 100%">
-    <img src="https://milazazo.files.wordpress.com/2021/07/onsen1.png" style="width:100%; max-width: 100%">
-    <img src="https://milazazo.files.wordpress.com/2021/07/subway2.png?w=1024" style="width:50%; max-width: 100%;">
-    <img src="https://milazazo.files.wordpress.com/2021/07/subway1.png?w=1024" style="width:50%; max-width: 100%; float:right">
-    <img src="https://milazazo.files.wordpress.com/2021/07/character1.png" style="width:100%; max-width: 100%">
-    <img src="https://milazazo.files.wordpress.com/2021/07/parfait.png?w=1024" style="width:50%; max-width: 100%;">
-    <img src="https://milazazo.files.wordpress.com/2021/07/cake.png?w=1024" style="width:50%; max-width: 100%; float:right">
+    <a href="img\3D\3D_onsen01.png" class="yBox" data-ybox-group="group1"><img src="img\3D\3D_onsen01.png" style="width:100%; max-width: 100%"/></a>
+    <a href="img\3D\3D_onsen02.png" class="yBox" data-ybox-group="group1"><img src="img\3D\3D_onsen02.png" style="width:100%; max-width: 100%"/></a>
+    <a href="img\3D\3D_subway01.png" class="yBox" data-ybox-group="group1"><img src="img\3D\3D_subway01.png" style="width:50%; max-width: 100%;"/></a>
+    <a href="img\3D\3D_subway02.png" class="yBox" data-ybox-group="group1"><img src="img\3D\3D_subway02.png" style="width:50%; max-width: 100%; float:right"/></a>
+    <a href="img\3D\3D_character.png" class="yBox" data-ybox-group="group1"><img src="img\3D\3D_character.png" style="width:100%; max-width: 100%"/></a>
+    <a href="img\3D\3D_parfait.png" class="yBox" data-ybox-group="group1"><img src="img\3D\3D_parfait.png" style="width:50%; max-width: 100%;"/></a>
+    <a href="img\3D\3D_cake.png" class="yBox" data-ybox-group="group1"><img src="img\3D\3D_cake.png" style="width:50%; max-width: 100%; float:right"/></a>
   </div>
 </div>
+
+ <!-- SCRIPTS-->
+ <script>
+     window.onload = function(){
+         if(document.querySelector('.yBox')){
+             var myYbox = new yBox();
+             myYbox.init();
+         };
+     }
+ </script>
 
 </body>
 </html>

@@ -1,48 +1,62 @@
 <!DOCTYPE html>
 <html>
-  <style>
-  #content{
-    margin-top:50px;
-    margin-bottom:50px;
-  }
-  </style>
-<link rel="stylesheet" href="style.css">
+  <script src="index.js"></script>
+  <link rel="stylesheet" href="style.css">
 <body>
   <div class="wrapper">
+  <!-- DESKTOP MENU -->
   <div id="sidebar">
-  <h1><a href="/index.html">milaza</a></h1>
-  <div class="section" style="background-color:rgb(0, 163, 238)">portfolio</div>
-  <ul>
-  <li><a href="/3D.html">3D</a></li>
-  <li><a href="/2D.html">2D</a></li>
-  </ul>
-  <div class="section" style="background-color:rgb(0, 163, 238)">related</div>
-  <ul>
-    <li><a href="/project.html">projects</a></li>
-    <li><a href="/commission.html">commission</a></li>
-    <li><div class="tt">store<span class="ttt">coming soon!</span></div></li>
+    <h1><a href="/index.html">milaza</a></h1>
+    <div class="section"">PORTFOLIO</div>
+    <ul>
+    <li><a href="/3D.html">3D</a></li>
+    <li><a href="/2D.html">2D</a></li>
     </ul>
-  <div class="section" style="background-color:rgb(0, 163, 238)">other</div>
-  <ul>
-    <li><a href="/misc.html">misc</a></li>
-    </ul>
-</div>
+    <div class="section"">RELATED</div>
+    <ul>
+      <li><a href="/project.html">Project</a></li>
+      <li><a href="/commission.html">Commission</a></li>
+      <li><div class="tt">Store<span class="ttt">Coming Soon!</span></div></li>
+      </ul>
+    <div class="section"">OTHER</div>
+    <ul>
+      <li><a href="/misc.html">Misc.</a></li>
+      </ul>
+    </div>
 
-<div id="topbar">
-  <h1><a href="/index.html">milaza</a></h1><div class="links"><a href="/3D.html">3D</a> / <a href="/2D.html">2D</a> / <a href="/project.html">projects</a> / <a href="/commission.html">commission</a> / <a href="/misc.html">misc</a></div>
-</div>
+<!-- MOBILE MENU -->
+    <div id="topbar">
+      <div id="hamburg" onclick="openMenu()">☰</div>
+      <h1><a href="/index.html">milaza</a></h1> 
+      <div id="mobile-menu" style="display:none">
+          <div class="button-wrapper">
+            <a href="/3D.html" class="button-menu">3D</a>
+            <a href="/2D.html" class="button-menu">2D</a>
+            <a href="/project.html" class="button-menu">PROJECT</a>
+            <div class="tt button-menu">STORE<span class="ttt">Coming Soon!</span></div>
+            <a href="/commission.html" class="button-menu">COMMISSION</a>
+            <a href="/misc.html" class="button-menu">MISC.</a>
+          </div>
+      </div>
+    </div>
   
   <div id="content">
-    <h1>Projects</h1>
-    <h2>Game</h2>
+    <div class="box"><div class="section">GAME</div>
     <ul>
-        <li><a href="https://milaza.itch.io/bloomy">BLOOMY</a> (1st year/1st semester 2D game)</li>
-        <li><a href="https://straylight-productions.itch.io/see-you-sea-cowboy">See You Sea Cowboy</a> (1st year/2nd semester 2D group game)</li>
-      </ul>
-    <h2>Comic</h2>
-    TBA.
-    <h2>Fanbook</h2>
-    For full images, see <a href="/fanbook.html">here</a>.
+      <li><a href="https://milaza.itch.io/bloomy">BLOOMY</a> (1st year/1st semester 2D game)</li>
+      <li><a href="https://straylight-productions.itch.io/see-you-sea-cowboy">See You Sea Cowboy</a> (1st year/2nd semester 2D group game)</li>
+    </ul>
+    </div>
+
+    <div class="box"><div class="section">COMIC</div>
+    <ul>
+      TBA.
+    </ul>
+    </div>
+
+    <div class="box"><div class="section">FANBOOK</div>
+    <ul>
+      For full images, see <a href="/fanbook.html">here</a>.
     <ul>
       <li><a href="https://www.vk.com/lobsterbooks">Yakuza Artbook</a> (2021 / Yakuza)</li>
       <li><a href="https://aceattorneytarot.tumblr.com/">Turnabout Tarot</a> (2021 / Ace Attorney)</li>
@@ -51,6 +65,7 @@
       <li><a href="https://aaseasonszine.tumblr.com/">We Always Return</a> (2020 / Ace Attorney)</li>
       <li><a href="https://disastrouslifezine.tumblr.com/">A Disastrous Life</a> (2020 / Saiki K.)</li>
       <li><a href="https://sidemzine.tumblr.com/">SONG for RE@SON</a> (2018 / iDOLM@STER)</li>
+    </ul>
     </ul>
   </div>
 </div>

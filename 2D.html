@@ -1,17 +1,11 @@
 <!DOCTYPE html>
 <html>
   <!-- lightbox -->
-  <head>
     <link rel="stylesheet" href="dist/css/yBox.min.css">
     <script src="dist/js/directive.js"></script>
     <script src="dist/js/yBox.min.js"></script>
-  </head>
  
   <style>
-    #content{
-      margin:0px;
-    }
-    
 /* ---- grid ---- */
 
 .grid {
@@ -49,34 +43,46 @@
 }
 
 </style>
+<script src="index.js"></script>
 <link rel="stylesheet" href="style.css">
 
-
 <body>
-  
   <div class="wrapper">
+  <!-- DESKTOP MENU -->
   <div id="sidebar">
-  <h1><a href="/index.html">milaza</a></h1>
-  <div class="section" style="background-color:rgb(0, 163, 238)">portfolio</div>
-  <ul>
-  <li><a href="/3D.html">3D</a></li>
-  <li><a href="/2D.html">2D</a></li>
-  </ul>
-  <div class="section" style="background-color:rgb(0, 163, 238)">related</div>
-  <ul>
-    <li><a href="/project.html">projects</a></li>
-    <li><a href="/commission.html">commission</a></li>
-    <li><div class="tt">store<span class="ttt">coming soon!</span></div></li>
+    <h1><a href="/index.html">milaza</a></h1>
+    <div class="section" style="background-color:rgb(0, 163, 238)">PORTFOLIO</div>
+    <ul>
+    <li><a href="/3D.html">3D</a></li>
+    <li><a href="/2D.html">2D</a></li>
     </ul>
-  <div class="section" style="background-color:rgb(0, 163, 238)">other</div>
-  <ul>
-    <li><a href="/misc.html">misc</a></li>
-    </ul>
-</div>
+    <div class="section" style="background-color:rgb(0, 163, 238)">RELATED</div>
+    <ul>
+      <li><a href="/project.html">Project</a></li>
+      <li><a href="/commission.html">Commission</a></li>
+      <li><div class="tt">Store<span class="ttt">Coming Soon!</span></div></li>
+      </ul>
+    <div class="section" style="background-color:rgb(0, 163, 238)">OTHER</div>
+    <ul>
+      <li><a href="/misc.html">Misc.</a></li>
+      </ul>
+    </div>
 
-<div id="topbar">
-  <h1><a href="/index.html">milaza</a></h1><div class="links"><a href="/3D.html">3D</a> / <a href="/2D.html">2D</a> / <a href="/project.html">projects</a> / <a href="/commission.html">commission</a> / <a href="/misc.html">misc</a></div>
-</div>
+<!-- MOBILE MENU -->
+    <div id="topbar">
+      <div id="hamburg" onclick="openMenu()">☰</div>
+      <h1><a href="/index.html">milaza</a></h1> 
+      <div id="mobile-menu" style="display:none">
+          <div class="button-wrapper">
+            <a href="/3D.html" class="button-menu">3D</a>
+            <a href="/2D.html" class="button-menu">2D</a>
+            <a href="/project.html" class="button-menu">PROJECT</a>
+            <div class="tt button-menu">STORE<span class="ttt">Coming Soon!</span></div>
+            <a href="/commission.html" class="button-menu">COMMISSION</a>
+            <a href="/misc.html" class="button-menu">MISC.</a>
+          </div>
+      </div>
+    </div>
   
   <div id="content">
         <div class="grid">
