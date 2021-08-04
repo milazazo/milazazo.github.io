@@ -192,7 +192,8 @@
   position: absolute;
   bottom:-35px;
   right: 16px;
-  margin:0px
+  margin:0px;
+  color:white;
 }
 
 /* ------ slideshow ------*/
@@ -225,9 +226,6 @@ td, th{
 
 /* ------ text styling ------*/
 
-body {
-  font-family: Arial, Helvetica, sans-serif;
-}
 
 h1 {
   font-family: "Do Hyeon", sans-serif;
@@ -240,7 +238,7 @@ h1 {
 }
 
 h2 {
-  font-family: "Do Hyeon", sans-serif;
+  font-family: "Josefin Sans", sans-serif;
 }
 
 .section{
@@ -280,7 +278,7 @@ h2 {
 body{
   font-size:20px;
   overflow:hidden;
-  font-family: "Josefin Sans";
+  font-family: "Josefin Sans", sans-serif;
 }
 
 a{
