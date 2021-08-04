@@ -59,18 +59,18 @@
 /* ------ button ------*/
 
 #hamburg{
-  font-size: 3em;
+  font-size: 40px;
   float:right;
   transition: 0.5s;
 }
 
 #hamburg:hover{
-  font-size:3.5em;
+  font-size:50px;
 }
 
 .button-wrapper{
   display:grid;
-  grid-template-columns:1fr 1fr 1fr 1fr 1fr;
+  grid-template-columns:1fr 1fr 1fr;
 }
 
 .button-menu{
@@ -78,8 +78,8 @@
   background-color:white;
   z-index: 5;
   color: rgb(0, 163, 238);
-  font-size:1.875em;
-  margin: 5px;
+  font-size:30px;
+  margin: 0.25em;
   border-radius: 5px;
   box-shadow: 2px 2px 5px rgba(59, 58, 58, 0.24);
   transition: 0.5s;
@@ -95,8 +95,11 @@
   background-color:rgb(158, 158, 158);
   z-index: 5;
   color: white;
-  font-size:1em;
-  margin: 5px;
+  font-size:20px;
+  margin-left: 1em;
+  margin-right: 1em;
+  margin-top: 0.5em;
+  margin-bottom: 0.5em;
   border-radius: 5px;
   box-shadow: 2px 2px 5px rgba(59, 58, 58, 0.24);
   transition: 0.5s;
@@ -109,11 +112,20 @@
 /* ------ splash ------*/
 
 #splash {
-  width:100%;
+  position:relative;
+  color:white;
+  font-size:80px;
 }
 
 #splash img{
   width:100%;
+}
+
+#splash h1{
+  position: absolute;
+  bottom:-20px;
+  right: 16px;
+  margin:0px
 }
 
 /* ------ table ------*/
@@ -129,25 +141,39 @@ body {
 }
 
 .section{
-    font-size:1.5em;
+    font-size:30px;
     font-weight: bold;
     padding: 0.25em .5em;
     color:white;
-    width:90%;
+    max-width:100%;
     border-radius: 5px;
     box-shadow: 2px 2px 5px rgba(59, 58, 58, 0.24);
+    margin-bottom:0.5em;
 }
 
 .box{
   border-radius: 5px;
   box-shadow: 2px 2px 5px rgba(59, 58, 58, 0.24);
   padding: 1em;
+  margin: 1em;
 }
 
-#sidebar #topbar h1{
-  font-size: 2.65em;
+#sidebar h1{
+  font-size: 50px;
   color:rgb(0, 163, 238);
-  text-shadow: 3px 3px 3px #ababab;
+  text-shadow: 2px 2px 5px rgba(59, 58, 58, 0.24);
+  text-align:center;
+}
+
+#topbar h1{
+  font-size: 40px;
+  color:rgb(0, 163, 238);
+  text-shadow: 2px 2px 5px rgba(59, 58, 58, 0.24);
+}
+
+body{
+  font-size:20px;
+  overflow:hidden;
 }
 
 a{
@@ -160,11 +186,26 @@ b{
   color: rgb(0, 163, 238);
 }
 
+ul {
+	position: relative;
+	list-style: none;
+	margin-left: 0;
+	padding-left: 1.2em;
+}
+ul li:before {
+	content: "🟄";
+	position: absolute;
+	left: 0;
+}
+
 /* ------ other ------ */
 
 .wrapper{
   display: grid;
+  height: 100vh;
   grid-template-columns:1fr 4fr;
+  width: 100vw;
+  overflow:hidden;
 }
 
 #sidebar{
@@ -182,23 +223,22 @@ b{
 
 #content{
 text-align: left;
-margin-top:50px;
-margin-bottom:50px;
+overflow-y: scroll;
 }
 
 @media only screen and (max-width: 1440px) {
 
   .button-wrapper{
     display:grid;
-    grid-template-columns:1fr;
+    grid-template-columns:1fr 1fr;
+  }
+
+  #splash h1{
+    display:none;
   }
 
   #content{
     text-align: left;
-    margin-top:50px;
-    margin-bottom:50px;
-    margin-left:25px;
-    margin-right:25px;
   }
 
   .wrapper{
