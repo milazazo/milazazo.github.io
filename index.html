@@ -4,10 +4,19 @@
   .intro-wrapper{
     display:grid;
     grid-template-columns:1fr 2fr;
-    width:80%;
+    width:90%;
     }
   .intro div{
       padding: 15px;
+  }
+
+  .section-wrapper{
+    display:grid;
+    grid-template-columns: 1fr 1fr;
+  }
+
+  .section-wrapper div{
+      margin: 15px;
   }
 
   @media only screen and (max-width: 1440px) {
@@ -16,6 +25,15 @@
     grid-template-columns:1fr;
     width:100%;
     }
+
+    .section-wrapper{
+    display:grid;
+    grid-template-columns: 1fr;
+  }
+
+  .section-wrapper div{
+      margin: 5px;
+  }
   }
   </style>
 <link rel="stylesheet" href="style.css">
@@ -48,9 +66,21 @@
   <div id="content">
     <div class="intro-wrapper">
       <div style="text-align:center"><img src="https://cdn-ak.f.st-hatena.com/images/fotolife/m/milaza/20201009/20201009101115.png" style="width:300px"></div>
-      <div style="font-size:1.5em">I'm Clay (A.K.A milaza). I'm currently a 3D animation student based in New Zealand, with hopes of working as a 3D environment artist for gaming in the future. I like newspaper comics and pro wrestling. Nice to meet you!
-      <div class="button-wrapper" style="text-align:center"><a href="https://www.twitter.com/milaza_zo" class="button-grey">Twitter</a> <a href="https://milaza.tumblr.com" class="button-grey">Tumblr</a> <a href="/https://www.artstation.com/andreyang" class="button-grey">ArtStation</a> <a href="https://www.twitter.com/milaza_zo" class="button-grey">Pixiv</a> <a href="https://www.twitter.com/milaza_zo" class="button-grey">SketchFab</a></div></div>
+      <div style="font-size:1.5em">I'm <b>Clay</b> (A.K.A <b>milaza</b>). I'm currently a 3D animation student based in New Zealand, with hopes of working as a 3D environment artist for gaming in the future. I like newspaper comics and pro wrestling. Nice to meet you!
+      <hr>
+        <div class="button-wrapper" style="text-align:center"><a href="https://www.twitter.com/milaza_zo" class="button-grey">TWITTER</a> <a href="https://milaza.tumblr.com" class="button-grey">TUMBLR</a> <a href="/https://www.artstation.com/andreyang" class="button-grey">ARTSTATION</a> <a href="https://www.twitter.com/milaza_zo" class="button-grey">PIXIV</a> <a href="https://www.twitter.com/milaza_zo" class="button-grey">SKETCHFAB</a></div></div>
     </div>
+
+    <div class="section-wrapper">
+      <div class="box" style="background-color:rgb(231, 231, 231)"><div class="section" style="background-color:rgb(0, 163, 238)">F.A.Q</div>
+      Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam et egestas eros. In ullamcorper, dui sed malesuada eleifend, quam magna iaculis sem, vitae pretium mi nisl id ipsum. Suspendisse non justo vitae nulla ornare pharetra quis sit amet massa. Pellentesque et leo quam. Suspendisse turpis ipsum, egestas ut arcu sed, laoreet sagittis dolor. Integer elementum vel nunc quis vestibulum. Maecenas ultrices neque ut convallis consectetur. Aenean sapien tellus, consequat sed convallis ut, volutpat sed nunc. Integer sodales mauris id lectus ornare, maximus eleifend erat euismod. Mauris et efficitur odio. Vestibulum eleifend est vitae odio posuere, non elementum purus pharetra. Phasellus non turpis ipsum.
+      </div>
+      <div class="box" style="background-color:rgb(231, 231, 231)"><div class="section" style="background-color:rgb(0, 163, 238)">something idk</div>
+      </div>
+    </div>
+
+
+
   </div>
 </div>
 
