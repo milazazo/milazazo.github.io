@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html>
+  <script src="index.js"></script>
+  <link rel="stylesheet" href="style.css">
+  <style>
+    .section-wrapper{
+      display:grid;
+      grid-template-columns: 2fr 1fr;
+    }
+
+    .section-wrapper-2{
+      display:grid;
+      grid-template-columns: 1fr 1fr 1fr;
+    }
+  
+    @media only screen and (max-width: 1440px) {
+      .section-wrapper{
+      display:grid;
+      grid-template-columns: 1fr;
+    }
+
+    .section-wrapper-2{
+      display:grid;
+      grid-template-columns: 1fr;
+    }
+  
+    }
+    </style>
+<body>
+  <div class="wrapper">
+  <!-- DESKTOP MENU -->
+  <div id="sidebar">
+    <h1><a href="/index.html">milaza/iM@S</a></h1>
+    <div class="section"">PORTFOLIO</div>
+    <ul>
+    <li><a href="/3D.html">3D</a></li>
+    <li><a href="/2D.html">2D</a></li>
+    </ul>
+    <div class="section"">RELATED</div>
+    <ul>
+      <li><a href="/project.html">Project</a></li>
+      <li><a href="/commission.html">Commission</a></li>
+      <li><div class="tt">Store<span class="ttt">Coming Soon!</span></div></li>
+      </ul>
+    <div class="section"">OTHER</div>
+    <ul>
+      <li><a href="/misc.html">Misc.</a></li>
+      </ul>
+    </div>
+
+<!-- MOBILE MENU -->
+    <div id="topbar">
+      <div id="hamburg" onclick="openMenu()">☰</div>
+      <h1><a href="/index.html">milaza/iM@S</a></h1> 
+      <div id="mobile-menu" style="display:none">
+          <div class="button-wrapper">
+            <a href="/3D.html" class="button-menu">3D</a>
+            <a href="/2D.html" class="button-menu">2D</a>
+            <a href="/project.html" class="button-menu">PROJECT</a>
+            <div class="tt button-menu">STORE<span class="ttt">Coming Soon!</span></div>
+            <a href="/commission.html" class="button-menu">COMMISSION</a>
+            <a href="/misc.html" class="button-menu">MISC.</a>
+          </div>
+      </div>
+    </div>
+  
+  <div id="content">
+    <div class="section-wrapper">
+    <div class="box"><img src="https://64.media.tumblr.com/3088cfe377ab64c00ac5f04cbd79b6bd/tumblr_inline_qczxu0l39H1skml8u_500.png" style="float:right">
+    Welcome to <b>milaza/iM@S</b>!
+    <br><br>This section of the site is dedicated to my favorite video game series, <b>THE iDOLM@STER</b>. I love all iDOLM@STER branches, especially SideM and Shiny Colors. I've been a <b>GenbuP</b> and <b>ShinsokuP</b> since 22nd July, 2016, and an <b>AmanaP</b> since 2019. <div class="tt">Currently<span class="ttt">I've played Cinderella Girls (Mobage), Deresute, Million Live! (Gree) and Mirishita as well!</span></div>, I play SideM (Mobage), Shiny Colors, and Pop Links. Looking forward to playing GROWING STARS in the future!
+    <br><br>My love of iM@S began in 2016, when I first met Genbu. He's been my favorite character ever since! I must've drawn hundreds of images of him across the years. Aside from fanart, I also post(ed) translations and collect merch (and yet, still no one recognizes my itabag). Besides Genbu and Amana, I also adore Jupiter, Amehiko, Natsuki (both CG/M), Syuko, Ryo (CG), and Sakuya. For more detail on my personal feelings for iM@S, <a href="memonote.html">click here</a>!
+    </div>
+
+    <div class="box"><div class="section">NAVIGATION</div>
+    <ul>
+        <b>Internal:</b>
+        <li>
+            <a href="/index.html">Main Site</a>
+        </li>
+        <br>
+        <b>External:</b>
+        <li>
+            <a href="/https://docs.google.com/document/d/1GHu25fT15rsPm-ei8mpN3zZaaQfx-3Rv69ky5rVl7b4/edit?usp=sharing.html"><div class="tt">SideM Translation Archive<span class="ttt">I run an archive of every English SideM translation! Great for learning more about the characters.</span></div></a>
+        </li>
+        <li>
+            <a href="https://www.twitter.com/sidem_eng"><div class="tt">SideM_ENG<span class="ttt">English SideM news/update account that I mod with my friends!</span></div></a>
+        </li>
+        <li>
+            <a href="https://www.twitter.com/sidem_eng"><div class="tt">Shinsoku Ikkon Discord Server<span class="ttt">Discord server for Shinsoku Ikkon fans!</span></div></a>
+        </li>
+        <li>
+            <a href="https://www.twitter.com/sidem_eng"><div class="tt">New Zealand iM@S P Discord Server<span class="ttt">Discord server for New Zealand iDOLM@STER fans! All branches are welcome.</span></div></a>
+        </li>
+    </ul>
+    </div>
+    </div>
+
+    <div class="section-wrapper-2">
+        <div class="box"><div class="section"></div>
+        
+        </div>
+    
+        <div class="box"><div class="section">NAVIGATION</div>
+        <ul>
+            <li>
+                <a href="/index.html">Main Site</a>
+            </li>
+        </ul>
+        </div>
+
+        <div class="box"><div class="section">NAVIGATION</div>
+        <ul>
+            <li>
+                <a href="/index.html">Main Site</a>
+            </li>
+        </ul>
+        </div>
+        </div>
+
+    <div class="box"><div class="section">FANBOOK</div>
+      For full images, see <a href="/fanbook.html">here</a>.
+    <ul>
+      <li><a href="https://www.vk.com/lobsterbooks">Yakuza Artbook</a> (2021 / Yakuza)</li>
+      <li><a href="https://aceattorneytarot.tumblr.com/">Turnabout Tarot</a> (2021 / Ace Attorney)</li>
+      <li><a href="https://pinopzine.tumblr.com/">PinOP</a> (2021 / One Piece)</li>
+      <li><a href="https://lovelivefashionzine.tumblr.com/">IDOLIZED</a> (2021 / Love Live!)</li>
+      <li><a href="https://aaseasonszine.tumblr.com/">We Always Return</a> (2020 / Ace Attorney)</li>
+      <li><a href="https://disastrouslifezine.tumblr.com/">A Disastrous Life</a> (2020 / Saiki K.)</li>
+      <li><a href="https://sidemzine.tumblr.com/">SONG for RE@SON</a> (2018 / iDOLM@STER)</li>
+    </ul>
+  </div>
+</div>
+</body>
+</html>
