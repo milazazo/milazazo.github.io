@@ -1,11 +1,11 @@
 @font-face {
   font-family: "Do Hyeon";
-  src: url('DoHyeon-Regular.ttf');
+  src: url('font/DoHyeon-Regular.ttf');
 }
 
 @font-face {
   font-family: "Josefin Sans";
-  src: url('JosefinSans-Regular.ttf');
+  src: url('font/JosefinSans-Regular.ttf');
 }
 
 /* ----- tooltip ------ */
@@ -28,7 +28,6 @@
   bottom: 100%;
   left: 50%;
   margin-left: -60px;
-  font-size: 14px;
 }
 
 .tt .ttt img {
@@ -333,6 +332,10 @@ overflow-y: scroll;
   .button-wrapper{
     display:grid;
     grid-template-columns:1fr 1fr;
+  }
+
+  .button-grey{
+    font-size:30px;
   }
 
   #splash h1{
