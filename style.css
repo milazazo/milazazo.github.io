@@ -120,6 +120,11 @@
   text-align:center;
 }
 
+#sidebar .button-grey{
+  padding: 10px 5px 5px;
+  margin: 0.25em;
+}
+
 .button-grey:hover{
   background-color:rgb(190, 26, 26);
   color:white;
@@ -246,9 +251,9 @@ h1 {
   margin: 4;
 }
 
-#sidebar a {
+#sidebar a, .tt {
   border-bottom: none;
-  font-size: 20;
+  font-size: 24px;
 }
 
 h2 {
