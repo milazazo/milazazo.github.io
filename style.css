@@ -240,6 +240,17 @@ h1 {
   color:rgb(0, 163, 238);
 }
 
+#sidebar ul {
+  list-style-type: none;
+  padding: 4;
+  margin: 4;
+}
+
+#sidebar a {
+  border-bottom: none;
+  font-size: 20;
+}
+
 h2 {
   font-family: "Josefin Sans", sans-serif;
 }
