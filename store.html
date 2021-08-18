@@ -1,7 +1,14 @@
 <!DOCTYPE html>
 <html>
-  <script src="index.js"></script>
-  <link rel="stylesheet" href="style.css">
+  <head>
+    <title>Milaza's 3D Portfolio</title>
+  </head>
+  <!-- lightbox -->
+  <link rel="stylesheet" href="dist/css/yBox.min.css">
+  <script src="dist/js/directive.js"></script>
+  <script src="dist/js/yBox.min.js"></script>
+<script src="index.js"></script>
+<link rel="stylesheet" href="style.css">
 <body>
   <div class="wrapper">
   <!-- DESKTOP MENU -->
@@ -47,30 +54,22 @@
     </div>
   
   <div id="content">
-    <div class="box"><div class="section">GAME</div>
-    <ul>
-      <li><a href="https://milaza.itch.io/bloomy">BLOOMY</a> (1st year/1st semester 2D game)</li>
-      <li><a href="https://straylight-productions.itch.io/see-you-sea-cowboy">See You Sea Cowboy</a> (1st year/2nd semester 2D group game)</li>
-    </ul>
-    </div>
 
-    <div class="box"><div class="section">COMIC</div>
-
-      TBA.
-    </div>
-
-    <div class="box"><div class="section">FANBOOK</div>
-      For full images, see <a href="/fanbook.html">here</a>.
-    <ul>
-      <li><a href="https://www.vk.com/lobsterbooks">Yakuza Artbook</a> (2021 / Yakuza)</li>
-      <li><a href="https://aceattorneytarot.tumblr.com/">Turnabout Tarot</a> (2021 / Ace Attorney)</li>
-      <li><a href="https://pinopzine.tumblr.com/">PinOP</a> (2021 / One Piece)</li>
-      <li><a href="https://lovelivefashionzine.tumblr.com/">IDOLIZED</a> (2021 / Love Live!)</li>
-      <li><a href="https://aaseasonszine.tumblr.com/">We Always Return</a> (2020 / Ace Attorney)</li>
-      <li><a href="https://disastrouslifezine.tumblr.com/">A Disastrous Life</a> (2020 / Saiki K.)</li>
-      <li><a href="https://sidemzine.tumblr.com/">SONG for RE@SON</a> (2018 / iDOLM@STER)</li>
-    </ul>
-  </div>
+    <div id="my-store-64576537"></div>
+<div>
+<script data-cfasync="false" type="text/javascript" src="https://app.ecwid.com/script.js?64576537&data_platform=code&data_date=2021-08-18" charset="utf-8"></script><script type="text/javascript"> xProductBrowser("categoriesPerRow=3","views=grid(20,3) list(60) table(60)","categoryView=grid","searchView=list","id=my-store-64576537");</script>
 </div>
+</div>
+
+ <!-- SCRIPTS-->
+ <script>
+     window.onload = function(){
+         if(document.querySelector('.yBox')){
+             var myYbox = new yBox();
+             myYbox.init();
+         };
+     }
+ </script>
+
 </body>
 </html>
