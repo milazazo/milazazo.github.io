@@ -125,6 +125,10 @@
   margin: 0.25em;
 }
 
+#sidebar .button-grey img{
+  box-shadow: none;
+}
+
 .button-grey:hover{
   background-color:rgb(190, 26, 26);
   color:white;

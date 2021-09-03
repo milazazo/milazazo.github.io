@@ -9,11 +9,29 @@
     grid-template-columns: 1fr 2fr;
   }
 
+  #mobile-links{
+      display: none;
+    }
+
+  #mobile-links .button-grey{
+    padding:10px 5px;
+    z-index: 5;
+    font-size:20px;
+    margin-left: 0.5em;
+    margin-right: 0.5em;
+    margin-top: 0em;
+    margin-bottom: 0.25em;
+  }
+
   @media only screen and (max-width: 1440px) {
     .section-wrapper{
     display:grid;
     grid-template-columns: 1fr;
-  }
+    }
+
+    #mobile-links{
+      display: block;
+    }
 
   }
   </style>
@@ -94,7 +112,16 @@
         <br><b>A:</b> Yes, it's fine to repost with credit on any website aside from Twitter and Tumblr.
         </div>
       </div>
-      <br><br>
+      <div id="mobile-links">
+        <div class="button-wrapper" style="text-align:center;grid-template-columns:1fr 1fr 1fr 1fr 1fr 1fr">
+          <a href="https://www.twitter.com/milaza_zo" class="button-grey"><img src="img\icon\twitter.png" style="width:25px"></a>
+          <a href="https://milaza.tumblr.com" class="button-grey"><img src="img\icon\tumblr.png" style="width:25px"></a>
+          <a href="https://www.instagram.com/milaza_kof" class="button-grey"><img src="img\icon\instagram.png" style="width:25px"></a>
+          <a href="https://www.pixiv.net/en/users/15196346/artworks" class="button-grey"><img src="img\icon\pixiv.png" style="width:25px"></a>
+          <a href="https://www.artstation.com/andreyang" class="button-grey"><img src="img\icon\artstation.png" style="width:25px"></a>
+          <a href="https://sketchfab.com/milaza" class="button-grey"><img src="img\icon\sketchfab.png" style="width:25px"></a>
+        </div>
+    </div>
     </div>
   </div>
 </div>
