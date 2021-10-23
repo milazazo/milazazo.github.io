@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<head>
+  <title>MILAZA</title>
+</head>
+
+  <style>
+  .section-wrapper{
+    display:grid;
+    grid-template-columns: 1fr 2fr;
+  }
+
+  #mobile-links{
+      display: none;
+    }
+
+  #mobile-links .button-grey{
+    padding:10px 5px;
+    z-index: 5;
+    font-size:20px;
+    margin-left: 0.5em;
+    margin-right: 0.5em;
+    margin-top: 0em;
+    margin-bottom: 0.25em;
+  }
+
+  @media only screen and (max-width: 1440px) {
+    .section-wrapper{
+    display:grid;
+    grid-template-columns: 1fr;
+    }
+
+    #mobile-links{
+      display: block;
+    }
+
+  }
+  </style>
+<link rel="stylesheet" href="style.css">
+<script src="index.js"></script>
+<body>
+  <div class="wrapper">
+
+    <!-- DESKTOP MENU -->
+    <div id="sidebar">
+    <div class="section" style="background-color:rgb(0, 163, 238)">PORTFOLIO</div>
+    <ul>
+    <li><a href="/3D.html">3D</a></li>
+    <li><a href="/2D.html">2D</a></li>
+    </ul>
+    <div class="section" style="background-color:rgb(0, 163, 238)">RELATED</div>
+    <ul>
+      <li><a href="/project.html">Project</a></li>
+      <li><a href="/commission.html">Commission</a></li>
+      <li><a href="/store.html">Store</a></li>
+      <li><a href="/misc.html">Misc.</a></li>
+      </ul>
+    <div class="section" style="background-color:rgb(0, 163, 238)">SOCIAL</div>
+      <div class="button-wrapper" style="text-align:center;grid-template-columns:1fr 1fr 1fr 1fr 1fr 1fr">
+        <a href="https://www.twitter.com/milaza_zo" class="button-grey"><img src="img\icon\twitter.png" style="width:25px"></a>
+        <a href="https://milaza.tumblr.com" class="button-grey"><img src="img\icon\tumblr.png" style="width:25px"></a>
+        <a href="https://www.instagram.com/milaza_kof" class="button-grey"><img src="img\icon\instagram.png" style="width:25px"></a>
+        <a href="https://www.pixiv.net/en/users/15196346/artworks" class="button-grey"><img src="img\icon\pixiv.png" style="width:25px"></a>
+        <a href="https://www.artstation.com/andreyang" class="button-grey"><img src="img\icon\artstation.png" style="width:25px"></a>
+        <a href="https://sketchfab.com/milaza" class="button-grey"><img src="img\icon\sketchfab.png" style="width:25px"></a>
+      </div>
+    </div>
+
+<!-- MOBILE MENU -->
+    <div id="topbar">
+      <div id="hamburg" onclick="openMenu()">☰</div>
+      <h1><a href="/index.html">MILAZA</a></h1> 
+      <div id="mobile-menu" style="display:none">
+          <div class="button-wrapper">
+            <a href="/3D.html" class="button-menu">3D</a>
+            <a href="/2D.html" class="button-menu">2D</a>
+            <a href="/project.html" class="button-menu">PROJECT</a>
+            <a href="/store.html" class="button-menu">STORE</a>
+            <a href="/commission.html" class="button-menu">COMMISSION</a>
+            <a href="/misc.html" class="button-menu">MISC.</a>
+          </div>
+      </div>
+    </div>
+  
+    <div id="content">
+
+      <div id="splash">
+        <div class="slideshow fade">
+          <img src="img\splash_a.png" style="width:100%">
+        </div>
+        
+        <div class="slideshow fade">
+          <img src="img\splash_b.png" style="width:100%">
+        </div>
+        
+        <div class="slideshow fade">
+          <img src="img\splash_c.png" style="width:100%">
+        </div>
+        <h1>MILAZA</h1>
+      </div>
+
+      <div class="section-wrapper">
+        <div class="box"><div class="section" style="background-color:rgb(0, 163, 238)">ABOUT</div>
+        I'm <b>Clay</b> (A.K.A <b>milaza</b>). I'm currently a 3D design student based in New Zealand, with hopes of working as a 3D environment artist for gaming in the future. I like newspaper comics and pro wrestling. Nice to meet you!
+        </div>
+        <div class="box"><div class="section" style="background-color:rgb(0, 163, 238)">UPDATE & F.A.Q</div>
+        <b>05/09/21:</b> Website established!
+        <hr>
+        <b>Q: Can I use your art as an icon/header on social media?</b>
+        <br><b>A:</b> Yes, but please credit my account.
+        <br><br>
+        <b>Q: Can I repost your art?</b>
+        <br><b>A:</b> Yes, it's fine to repost with credit on any website aside from Twitter and Tumblr.
+        </div>
+      </div>
+      <div id="mobile-links">
+        <div class="button-wrapper" style="text-align:center;grid-template-columns:1fr 1fr 1fr">
+          <a href="https://www.twitter.com/milaza_zo" class="button-grey"><img src="img\icon\twitter.png" style="width:25px"></a>
+          <a href="https://milaza.tumblr.com" class="button-grey"><img src="img\icon\tumblr.png" style="width:25px"></a>
+          <a href="https://www.instagram.com/milaza_kof" class="button-grey"><img src="img\icon\instagram.png" style="width:25px"></a>
+          <a href="https://www.pixiv.net/en/users/15196346/artworks" class="button-grey"><img src="img\icon\pixiv.png" style="width:25px"></a>
+          <a href="https://www.artstation.com/andreyang" class="button-grey"><img src="img\icon\artstation.png" style="width:25px"></a>
+          <a href="https://sketchfab.com/milaza" class="button-grey"><img src="img\icon\sketchfab.png" style="width:25px"></a>
+        </div>
+    </div>
+    </div>
+  </div>
+</div>
+
+<script>
+    var slideIndex = 0;
+  showSlides();
+  
+  function showSlides() {
+    var i;
+    var slides = document.getElementsByClassName("slideshow");
+    for (i = 0; i < slides.length; i++) {
+      slides[i].style.display = "none";  
+    }
+    slideIndex++;
+    if (slideIndex > slides.length) {slideIndex = 1}    
+    slides[slideIndex-1].style.display = "block";  
+    setTimeout(showSlides, 4000); // Change image every 2 seconds
+  }
+</script>
+
+</body>
+</html>
