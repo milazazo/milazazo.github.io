@@ -1,0 +1,155 @@
+<style>
+    @font-face {
+    font-family: "Do Hyeon";
+    src: url('font/DoHyeon-Regular.ttf');
+    }
+
+    @font-face {
+    font-family: "Josefin Sans";
+    src: url('font/JosefinSans-Regular.ttf');
+    }
+
+    body{
+        font-family: "Josefin Sans", sans-serif;
+        font-size: 16px;
+        color:white;
+    }
+
+    a{
+        color:white;
+        text-decoration: none;
+    }
+
+    .box{
+        margin: 10px;
+        border-width: 1px;
+        border-color: #23cf73;
+        border-style: solid;
+        background-color: #ACACAC;
+        padding: 10px;
+    }
+
+    #content{
+      position: block;
+      margin: auto;
+      width: 800px;
+      padding: 3em;
+      margin-top: 100px;
+  }
+
+    .button-wrapper{
+        display:grid;
+        grid-template-columns: 2fr 1fr;
+    }
+
+    .button-wrapper .box{
+        height: 80px;
+        text-align: center;
+    }
+
+    #personal{
+        width: 500px;
+    }
+
+    #info{
+        margin-left: 10px;
+        width: 258px;
+    }
+
+    #portfolio{
+        position:relative;
+        height: 350px;
+        width: 100%;
+        background: rgb(64,78,137);
+        background: linear-gradient(163deg, rgba(64,78,137,1) 45%, #23cf73 100%);
+    }
+
+    #portfolio img{
+        width:600px;
+        position: absolute;
+        bottom:0px;
+        left:-100px;
+        z-index:1;
+    }
+
+    #portfolio h1{
+        position: absolute;
+        bottom: 50px;
+        right: 20px;
+        margin:0px;
+        color:white;
+        font-size: 100px;
+        font-family: "Do Hyeon", sans-serif;
+        text-shadow: 0px 0px 5px white;
+        z-index:2;
+    }
+
+    #portfolio-subtitle{
+        position: absolute;
+        bottom: 158px;
+        right: 20px;
+        margin:0px;
+        font-size:28px;
+        z-index:2;
+    }
+
+    #portfolio-enter{
+        position: absolute;
+        bottom: 25px;
+        right: 20px;
+        margin:0px;
+        font-size:45px;
+        z-index:2;
+    }
+
+    #personal h1{
+        margin:0px;
+        color:white;
+        font-size: 60px;
+        font-family: "Do Hyeon", sans-serif;
+        text-shadow: 0px 0px 5px white;
+    }
+
+
+  @media only screen and (max-width: 1440px) {
+
+    #content{
+        width:80%;
+    }
+
+  .button-wrapper{
+        display:grid;
+        grid-template-columns: 1fr;
+    }
+
+    #personal, #info{
+        width:100%;
+    }
+}
+
+</style>
+
+<body>
+    <div id="content">
+                <div class="box" id="portfolio">
+                    <a href="/3D>"><img src="img/test_splash.png"></a>
+                    <a href="/3D>"><h1>PORTFOLIO</h1></a>
+                    <div id="portfolio-subtitle">
+                        <a href="/3D>">3D/ILLUST/COMIC by MILAZA</a>
+                    </div>
+                    <div id="portfolio-enter">
+                        <a href="/3D>">ENTER ⯈⯈⯈</a>
+                    </div>
+                </div>
+                <div class="button-wrapper">
+                    <div class="box" id="personal">
+                        <h1>PERSONAL SITE</h1>
+                    </div>
+                    <div class="box" id="info">
+                        milaza.art layout 2.0
+                        <br>last updated 23/10/21
+                        <br><br>contact@milaza.art
+                    </div>
+                </div>
+            </div>
+</body>
