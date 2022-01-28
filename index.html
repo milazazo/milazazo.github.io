@@ -4,7 +4,10 @@
   <script src="jquery.js"></script> 
   <script> 
   $(function(){
-    $("#sidebarcontent").load("menudesktop.html"); 
+    $("#sidebar-content").load("menudesktop.html"); 
+  });
+  $(function(){
+    $("#topbar-content").load("menumobile.html"); 
   });
   </script> 
 
@@ -47,25 +50,12 @@
 <body>
   <div class="wrapper">
 
-    <!-- DESKTOP MENU -->
+    <!-- MENU -->
     <div id="sidebar">
-      <div id="sidebarcontent"></div>
+      <div id="sidebar-content"></div>
     </div>
-
-<!-- MOBILE MENU -->
     <div id="topbar">
-      <div id="hamburg" onclick="openMenu()">☰</div>
-      <h1><a href="/index.html">MILAZA</a></h1> 
-      <div id="mobile-menu" style="display:none">
-          <div class="button-wrapper">
-            <a href="/3D.html" class="button-menu">3D</a>
-            <a href="/2D.html" class="button-menu">2D</a>
-            <a href="/project.html" class="button-menu">PROJECT</a>
-            <a href="/store.html" class="button-menu">STORE</a>
-            <a href="/commission.html" class="button-menu">COMMISSION</a>
-            <a href="/misc.html" class="button-menu">MISC.</a>
-          </div>
-      </div>
+      <div id="topbar-content"></div>
     </div>
   
     <div id="content">
