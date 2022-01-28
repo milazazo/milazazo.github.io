@@ -94,7 +94,6 @@
   font-size:30px;
   margin: 0.25em;
   border-radius: 5px;
-  box-shadow: 2px 2px 5px rgba(59, 58, 58, 0.24);
   transition: 0.5s;
 }
 
@@ -115,7 +114,6 @@
   margin-top: 0.5em;
   margin-bottom: 0.5em;
   border-radius: 5px;
-  box-shadow: 2px 2px 5px rgba(59, 58, 58, 0.24);
   transition: 0.5s;
   text-align:center;
 }
@@ -123,10 +121,6 @@
 #sidebar .button-grey{
   padding: 10px 5px 5px;
   margin: 0.25em;
-}
-
-#sidebar .button-grey img{
-  box-shadow: none;
 }
 
 .button-grey:hover{
@@ -146,7 +140,6 @@
   margin-top: 0.5em;
   margin-bottom: 0.5em;
   border-radius: 5px;
-  box-shadow: 2px 2px 5px rgba(59, 58, 58, 0.24);
   transition: 0.5s;
   text-align: center;
 }
@@ -271,16 +264,12 @@ h2 {
     padding: 0.25em .5em;
     color:white;
     max-width:100%;
-    border-radius: 5px;
-    box-shadow: 2px 2px 5px rgba(59, 58, 58, 0.24);
     margin-bottom:0.5em;
     font-family: "Do Hyeon", sans-serif;
     background-color:rgb(0, 163, 238);
 }
 
 .box{
-  border-radius: 5px;
-  box-shadow: 2px 2px 5px rgba(59, 58, 58, 0.24);
   padding: 1em;
   margin: 1em;
   background-color:rgb(231, 231, 231)
@@ -289,14 +278,12 @@ h2 {
 #sidebar h1{
   font-size: 50px;
   color:rgb(0, 163, 238);
-  text-shadow: 2px 2px 5px rgba(59, 58, 58, 0.24);
   text-align:center;
 }
 
 #topbar h1{
   font-size: 40px;
   color:rgb(0, 163, 238);
-  text-shadow: 2px 2px 5px rgba(59, 58, 58, 0.24);
 }
 
 body{
