@@ -40,31 +40,7 @@
 <body>
   <div class="wrapper">
 
-    <!-- DESKTOP MENU -->
-    <div id="sidebar">
-      <script src="jquery.js"></script> 
-      <script> 
-      $(function(){
-        $("#includedContent").load("menudesktop.html"); 
-      });
-      </script> 
-    </div>
-
-<!-- MOBILE MENU -->
-    <div id="topbar">
-      <div id="hamburg" onclick="openMenu()">☰</div>
-      <h1><a href="/index.html">MILAZA</a></h1> 
-      <div id="mobile-menu" style="display:none">
-          <div class="button-wrapper">
-            <a href="/3D.html" class="button-menu">3D</a>
-            <a href="/2D.html" class="button-menu">2D</a>
-            <a href="/project.html" class="button-menu">PROJECT</a>
-            <a href="/store.html" class="button-menu">STORE</a>
-            <a href="/commission.html" class="button-menu">COMMISSION</a>
-            <a href="/misc.html" class="button-menu">MISC.</a>
-          </div>
-      </div>
-    </div>
+  <?php include "./menu.php"; ?>
   
     <div id="content">
 
