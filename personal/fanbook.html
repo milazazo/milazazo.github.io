@@ -4,6 +4,24 @@
     font-family: "Josefin Sans";
     src: url('font/JosefinSans-Regular.ttf');
     }
+
+    /* ----- scrollbar ------ */
+
+    ::-webkit-scrollbar {
+    width: 10px;
+    }
+
+    ::-webkit-scrollbar-track {
+    background: #f1f1f1; 
+    }
+
+    ::-webkit-scrollbar-thumb {
+    background: #888; 
+    }
+
+    ::-webkit-scrollbar-thumb:hover {
+    background: #555; 
+    }
     
     body{       
         background: rgb(2,0,36);
@@ -58,6 +76,7 @@
         top:35%;
         left:50%;
         transform: translate(-50%, -50%);
+        text-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
     }
 
     h3 {
@@ -123,9 +142,6 @@
             <h1>Fanbook Collection</h1>
         </div>
 
-        <br><br>This is my collection of fanbooks such as dojinshi and zines. It also includes my own comics.
-        <br><br>I pretty much only buy fanbooks if they're by artists I already like or if they're about some extremely niche topic I really want to see. Basically, it means that I collect Tosaka Trio-related content even though I don't care about Atmey or Wellington. My current collection is <b>25</b> books.
-
         <h3 id="aa">Ace Attorney</h3>
                 <div id="fanbook"><table><tr>
                     <td class="fanbook-image" rowspan="2"><img src="https://booth.pximg.net/94c12eff-82e2-4843-a11b-93cd3c47e536/i/1480442/4a2f2118-015d-45eb-95ef-7e0314534d1a_base_resized.jpg"></td>
@@ -142,7 +158,7 @@
                 </tr></table></div>
 
                 <div id="fanbook"><table><tr>
-                    <td class="fanbook-image" rowspan="2"><img src="https://booth.pximg.net/94c12eff-82e2-4843-a11b-93cd3c47e536/i/1480442/4a2f2118-015d-45eb-95ef-7e0314534d1a_base_resized.jpg"></td>
+                    <td class="fanbook-image" rowspan="2"><img src="https://files.catbox.moe/qves5s.jpg"></td>
                     <td class="fanbook-stat">
                         <div class="fanbook-title">春待ち</div>
                         <table class="fanbook-stat-data"><tr><td>Creator: 琥</td><td>Year: 2020</td></tr>
@@ -203,7 +219,7 @@
                         <div class="fanbook-title">Shoot at the Checkmate<a href="https://siomoogle.booth.pm/items/1671281"><img src="https://lh3.googleusercontent.com/x1oP5wFD6u4Ab2GqNg2Y6Z9RB4SYH6QWPUqs9dbq_22JezGnyzSmR2doGytpt4sXHzuR"></a></div>
                         <table class="fanbook-stat-data"><tr><td>Creator: Various</td><td>Year: 2019</td></tr>
                             <tr><td>Page/size: 100/A5</td><td>Price: 1600 (JPY)</td></tr>
-                            <tr><td>Release: Comic City Spark 14</td><td>Content: Comic, fic, art</td></tr>
+                            <tr><td>Release: Comic City Spark 14</td><td>Content: Comic, fic, illust</td></tr>
                         </table>
                     </td>
                 </tr>
@@ -233,7 +249,7 @@
                         <div class="fanbook-title">We Always Return</div>
                         <table class="fanbook-stat-data"><tr><td>Creator: Various</td><td>Year: 2020</td></tr>
                             <tr><td>Page/size: 72/A5</td><td>Price: ?</td></tr>
-                            <tr><td>Release: Online order</td><td>Content: Comic, fic, art</td></tr>
+                            <tr><td>Release: Online order</td><td>Content: Comic, fic, illust</td></tr>
                         </table>
                     </td>
                 </tr>
@@ -265,7 +281,7 @@
                         <div class="fanbook-title">TITANIC<a href="https://thetitans-fanzine.tumblr.com/"><img src="https://www.iconpacks.net/icons/2/free-tumblr-logo-icon-2434-thumb.png"></a></div>
                         <table class="fanbook-stat-data"><tr><td>Creator: Various</td><td>Year: 2020</td></tr>
                             <tr><td>Page/size: 80/A5</td><td>Price: 28 (USD)</td></tr>
-                            <tr><td>Release: Online order</td><td>Content: Art, fic</td></tr>
+                            <tr><td>Release: Online order</td><td>Content: Illust, fic</td></tr>
                         </table>
                     </td>
                 </tr>
@@ -297,7 +313,7 @@
                         <div class="fanbook-title">こいつら三兄弟伝説 (The Legend of These Three Bros)</div>
                         <table class="fanbook-stat-data"><tr><td>Creator: Various</td><td>Year: 2003</td></tr>
                             <tr><td>Page/size: 60/B5</td><td>Price: ?</td></tr>
-                            <tr><td>Release: ?</td><td>Content: Comic, art</td></tr>
+                            <tr><td>Release: ?</td><td>Content: Comic, illust</td></tr>
                         </table>
                     </td>
                 </tr>
@@ -314,7 +330,7 @@
                         <div class="fanbook-title">IDOLIZED<a href="https://twitter.com/zine_live"><img src="https://www.iconpacks.net/icons/2/free-twitter-logo-icon-2429-thumb.png"></a></div>
                         <table class="fanbook-stat-data"><tr><td>Creator: Various</td><td>Year: 2021</td></tr>
                             <tr><td>Page/size: 46/A5</td><td>Price: 20 (USD)</td></tr>
-                            <tr><td>Release: Online order</td><td>Content: Art, fic</td></tr>
+                            <tr><td>Release: Online order</td><td>Content: Illust, fic</td></tr>
                         </table>
                     </td>
                 </tr>
@@ -345,7 +361,7 @@
                         <div class="fanbook-title">Lumineux</div>
                         <table class="fanbook-stat-data"><tr><td>Creator: miiikanP</td><td>Year: 2019</td></tr>
                             <tr><td>Page/size: 16/A5</td><td>Price: ?</td></tr>
-                            <tr><td>Release: SUPER MIR@CLE FESTIVAL!! 2019</td><td>Content: Art</td></tr>
+                            <tr><td>Release: SUPER MIR@CLE FESTIVAL!! 2019</td><td>Content: Illust</td></tr>
                         </table>
                     </td>
                 </tr>
@@ -389,7 +405,7 @@
                         <div class="fanbook-title">SONG FOR RE@ASON</div>
                         <table class="fanbook-stat-data"><tr><td>Creator: Various</td><td>Year: 2018</td></tr>
                             <tr><td>Page/size: 42/A5</td><td>Price: ?</td></tr>
-                            <tr><td>Release: Online Order</td><td>Content: Art</td></tr>
+                            <tr><td>Release: Online Order</td><td>Content: Illust</td></tr>
                         </table>
                     </td>
                 </tr>
@@ -425,7 +441,7 @@
                     </td>
                 </tr>
                 <tr>
-                    <td class="fanbook-info">[TBA]</td>
+                    <td class="fanbook-info">It's a crossover between Shinsoku Ikkon and Enjin, the best units in SideM and Cinderella Girls! Basically, it's just very cool to see these two groups interact!</td>
                 </tr></table></div>
 
                 <div id="fanbook"><table><tr>
@@ -451,7 +467,7 @@
                         <div class="fanbook-title">Disastrous Life<a href="https://twitter.com/disastrouszine"><img src="https://www.iconpacks.net/icons/2/free-twitter-logo-icon-2429-thumb.png"></a></div>
                         <table class="fanbook-stat-data"><tr><td>Creator: Various</td><td>Year: 2020</td></tr>
                             <tr><td>Page/size: ?/A5</td><td>Price: ?</td></tr>
-                            <tr><td>Release: Online order</td><td>Content: Comic, art, fic</td></tr>
+                            <tr><td>Release: Online order</td><td>Content: Comic, illust, fic</td></tr>
                         </table>
                     </td>
                 </tr>
@@ -497,7 +513,7 @@
                         <div class="fanbook-title">DARK WATERS<a href="https://twitter.com/pinopzine"><img src="https://www.iconpacks.net/icons/2/free-twitter-logo-icon-2429-thumb.png"></a></div>
                         <table class="fanbook-stat-data"><tr><td>Creator: Various</td><td>Year: 2021</td></tr>
                             <tr><td>Page/size: 49/A5</td><td>Price: ?</td></tr>
-                            <tr><td>Release: Online order</td><td>Content: Art, fic</td></tr>
+                            <tr><td>Release: Online order</td><td>Content: Illust, fic</td></tr>
                         </table>
                     </td>
                 </tr>
