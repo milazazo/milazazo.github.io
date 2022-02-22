@@ -2,6 +2,15 @@
 <html>
   <head>
     <title>MISCELLANEOUS</title>
+    <script src="jquery.js"></script> 
+  <script> 
+  $(function(){
+    $("#sidebar-content").load("menudesktop.html"); 
+  });
+  $(function(){
+    $("#topbar-content").load("menumobile.html"); 
+  });
+  </script> 
   </head>
   <script src="index.js"></script>
   <link rel="stylesheet" href="style.css">
@@ -31,47 +40,13 @@
   </style>
 <body>
   <div class="wrapper">
-  <!-- DESKTOP MENU -->
+  <!-- MENU -->
   <div id="sidebar">
-    <h1><a href="/index.html">MILAZA</a></h1>
-    <div class="section">PORTFOLIO</div>
-    <ul>
-    <li><a href="/3D.html">3D</a></li>
-    <li><a href="/2D.html">2D</a></li>
-    </ul>
-    <div class="section">RELATED</div>
-    <ul>
-      <li><a href="/project.html">Project</a></li>
-      <li><a href="/commission.html">Commission</a></li>
-      <li><a href="/store.html">Store</a></li>
-      <li><a href="/misc.html">Misc.</a></li>
-      </ul>
-    <div class="section">SOCIAL</div>
-      <div class="button-wrapper" style="text-align:center;grid-template-columns:1fr 1fr 1fr 1fr 1fr 1fr">
-        <a href="https://www.twitter.com/milaza_zo" class="button-grey"><img src="img\icon\twitter.png" style="width:25px"></a>
-        <a href="https://milaza.tumblr.com" class="button-grey"><img src="img\icon\tumblr.png" style="width:25px"></a>
-        <a href="https://www.instagram.com/milaza_kof" class="button-grey"><img src="img\icon\instagram.png" style="width:25px"></a>
-        <a href="https://www.pixiv.net/en/users/15196346/artworks" class="button-grey"><img src="img\icon\pixiv.png" style="width:25px"></a>
-        <a href="https://www.artstation.com/andreyang" class="button-grey"><img src="img\icon\artstation.png" style="width:25px"></a>
-        <a href="https://sketchfab.com/milaza" class="button-grey"><img src="img\icon\sketchfab.png" style="width:25px"></a>
-      </div>
+    <div id="sidebar-content"></div>
   </div>
-
-<!-- MOBILE MENU -->
-    <div id="topbar">
-      <div id="hamburg" onclick="openMenu()">☰</div>
-      <h1><a href="/index.html">MILAZA</a></h1> 
-      <div id="mobile-menu" style="display:none">
-          <div class="button-wrapper">
-            <a href="/3D.html" class="button-menu">3D</a>
-            <a href="/2D.html" class="button-menu">2D</a>
-            <a href="/project.html" class="button-menu">PROJECT</a>
-            <a href="/store.html" class="button-menu">STORE</a>
-            <a href="/commission.html" class="button-menu">COMMISSION</a>
-            <a href="/misc.html" class="button-menu">MISC.</a>
-          </div>
-      </div>
-    </div>
+  <div id="topbar">
+    <div id="topbar-content"></div>
+  </div>
   
   <div id="content">
     <div class="section-wrapper-2">
@@ -99,10 +74,10 @@
       </div>
       <div class="box"><div class="section">LINK</div>
       <div style="text-align: center;">
-      <img src="https://i.ibb.co/wQXMjLg/button-site.png">
+      I'll add a link eventually...
       <br>
       <textarea>
-        <a href="https://www.milaza.art"><img src="https://i.ibb.co/wQXMjLg/button-site.png"></a>
+        
       </textarea>
     </div>
       </div>
