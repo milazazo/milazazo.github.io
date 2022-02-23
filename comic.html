@@ -1,0 +1,181 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>COMIC</title>
+    <script src="jquery.js"></script> 
+  <script> 
+  $(function(){
+    $("#sidebar-content").load("menudesktop.html"); 
+  });
+  $(function(){
+    $("#topbar-content").load("menumobile.html"); 
+  });
+  </script> 
+  </head>
+  <script src="index.js"></script>
+  <link rel="stylesheet" href="style.css">
+  <style>
+          .comic-image{
+        width:20%;
+    }
+    
+    .comic-image img{
+        width:100%;
+    }
+
+    .comic-stat{
+        width:100%;
+        padding:1em;
+    }
+
+    .comic-stat-data{
+        width:100%;
+    }
+
+    .comic-stat-data td{
+        width:50%;
+    }
+
+    .comic-info{
+        padding:1em;
+        background-color: white;
+    }
+
+    .comic-title{
+        color:rgb(0, 163, 238);
+        font-size:24px;
+        font-family: "Josefin Sans";
+        float:left;
+        font-size: 28px;
+    }
+
+    .comic-title img{
+        height:16px;
+        padding-left:5px;
+        padding-right:5px;
+    }
+
+  .section-wrapper{
+    display:grid;
+    grid-template-columns: 1fr;
+  }
+  
+  .section-wrapper-2{
+    display:grid;
+    grid-template-columns: 1fr 2fr;
+  }
+
+  @media only screen and (max-width: 1440px) {
+    .section-wrapper{
+    display:grid;
+    grid-template-columns: 1fr;
+  }
+
+  .section-wrapper-2{
+    display:grid;
+    grid-template-columns: 1fr;
+  }
+
+  }
+  </style>
+<body>
+  <div class="wrapper">
+  <!-- MENU -->
+  <div id="sidebar">
+    <div id="sidebar-content"></div>
+  </div>
+  <div id="topbar">
+    <div id="topbar-content"></div>
+  </div>
+  
+  <div id="content">
+    <div class="section-wrapper">
+      <div class="box">
+      I like drawing and producing comic books in my spare time. Right now, I've only released fan comics, though I plan to work on original comics soon (including a webcomic about Catholics in Nagasaki). Look forward to it! Aside from my phsyically printed comics listed on this page, you can also view more comic works on <a href="https://milaza.tumblr.com/tagged/comic">here</a>.
+        </div>
+
+        <div class="box"><div class="section">SELF-PUBLISHED</div>
+        <div id="comic"><table><tr>
+            <td class="comic-image" rowspan="2"><img src="https://files.catbox.moe/oxj54d.png"></td>
+            <td class="comic-stat">
+                <div class="comic-title">Everyone's Semester of Anthropology</div>
+                <table class="comic-stat-data"><tr><td>Series: Danganronpa</td><td>Year: 2022</td></tr>
+                    <tr><td>Page/size: 16/A5</td><td>Price: 8 (USD)</td></tr>
+                    <tr><td>Release: Overload 2022</td><td>Content: Comic</td></tr>
+                </table>
+            </td>
+        </tr>
+        <tr>
+            <td class="comic-info">A small collection of stories about Korekiyo and the other students of the Ultimate Academy for Gifted Juveniles! Mix of comedic, heat-warming and even serious comics focusing on traditions and culture.
+            <br><br>Copy-center printed and self-bound. Includes Korekiyo sticker bonus.
+            <br><br>Online sale coming late April!
+            </td>
+        </tr></table></div>
+        <div id="comic"><table><tr>
+            <td class="comic-image" rowspan="2"><img src="https://files.catbox.moe/u0ibg4.png"></td>
+            <td class="comic-stat">
+                <div class="comic-title">You have 183 New Messages!</div>
+                <table class="comic-stat-data"><tr><td>Series: Ace Attorney</td><td>Year: 2021</td></tr>
+                    <tr><td>Page/size: 6/A5</td><td>Price: 3 (USD)</td></tr>
+                    <tr><td>Release: Overload 2022</td><td>Content: Comic</td></tr>
+                </table>
+            </td>
+        </tr>
+        <tr>
+            <td class="comic-info">Maya <i>really</i> wants Phoenix to get a new girlfriend, so she does what any logical legal assistant would do: sign him up for a dating site! It's a short and silly story following what happens after.
+            <br><br>Copy-center printed.
+            <br><br>Online sale coming late April!</td>
+        </tr></table></div>
+            <div id="comic"><table><tr>
+                <td class="comic-image" rowspan="2"><img src="https://files.catbox.moe/9zl92k.png"></td>
+                <td class="comic-stat">
+                    <div class="comic-title">THE FANTASTIC FIREMAN!</div>
+                    <table class="comic-stat-data"><tr><td>Series: THE iDOLM@STER SideM</td><td>Year: 2021</td></tr>
+                        <tr><td>Page/size: 40/A5</td><td>Price: 12.50 (USD)</td></tr>
+                        <tr><td>Release: Overload 2022</td><td>Content: Comic</td></tr>
+                    </table>
+                </td>
+            </tr>
+            <tr>
+                <td class="comic-info">Shinsoku Ikkon are chosen to perform as the lead roles in a superhero stage play! Though they’re BURNIN’ in excitement, trouble starts when some of the other performer’s belongings are stolen… and not only that, but someone’s trying to take over Ouken High’s gang!? The flames a-risin', the rumbles roar!! It's a legit battle on stage!! FIRE up all the way to Ibaraki with a performance that blazes the whole town!
+                <br><br>Professionally printed.
+                <br><br>Online re-sale coming late March (BOOTH) and late April (Etsy)!
+                </td>
+            </tr></table></div>
+        </div>
+        <div class="box"><div class="section">COLLABORATIVE ZINE</div>
+        <div id="comic"><table><tr>
+            <td class="comic-image" rowspan="2"><img src="https://st4.depositphotos.com/14953852/24787/v/600/depositphotos_247872612-stock-illustration-no-image-available-icon-vector.jpg"></td>
+            <td class="comic-stat">
+                <div class="comic-title">Luffy and Akainu's Spicy Food Eating Contest</div>
+                <table class="comic-stat-data"><tr><td>Series: One Piece</td><td>Year: 2021</td></tr>
+                    <tr><td>Page/size: 4/A5</td><td>Price: ?</td></tr>
+                    <tr><td>Release: Online order</td><td>Book: <a href="https://twitter.com/opfoodzine">FEAST</a></td></tr>
+                </table>
+            </td>
+        </tr>
+        <tr>
+            <td class="comic-info">Caesar Clown and Sanji host a spicy food eating contest as a challenge for the Straw Hats captain and the fleet admiral.
+            <br><br>Online pre-order coming summer 2022!
+            </td>
+        </tr></table></div>
+        <div id="comic"><table><tr>
+            <td class="comic-image" rowspan="2"><img src="https://st4.depositphotos.com/14953852/24787/v/600/depositphotos_247872612-stock-illustration-no-image-available-icon-vector.jpg"></td>
+            <td class="comic-stat">
+                <div class="comic-title">COLD NOODLE LOVER</div>
+                <table class="comic-stat-data"><tr><td>Series: Yakuza</td><td>Year: 2021</td></tr>
+                    <tr><td>Page/size: 1/A5</td><td>Price: 600 (RUB)</td></tr>
+                    <tr><td>Release: Online order</td><td>Book: <a href="https://vk.com/lobsterbooks">RGG Artbook</a></td></tr>
+                </table>
+            </td>
+        </tr>
+        <tr>
+            <td class="comic-info">Kashiwagi takes Kiryu and Nishiki to his favorite soba store.
+            </td>
+        </tr></table></div>
+        </div>
+    </div>
+    </div>
+  </div>
+</body>
+</html>
