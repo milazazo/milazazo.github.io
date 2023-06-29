@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>environments</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="jquery.js"></script><script src="index.js"></script>
+    <link rel="stylesheet" href="dist/css/yBox.min.css"><script src="dist/js/directive.js"></script><script src="dist/js/yBox.min.js"></script>
+    <link rel="stylesheet" href="style.css">
+    <style>
+      a {border-bottom: none;}
+      #content {overflow-x: hidden;}
+
+      .environment-wrapper img, .character-wrapper img{
+        width: 100%;
+      }
+
+      .environment-wrapper{
+        width: 100%;
+        display: grid;
+        grid-template: 'hanok1 hanok1 hanok2'
+        'hanok1 hanok1 hanok3';
+        align-items: center;
+      }
+
+      #grid-hanok1{grid-area: hanok1;} #grid-hanok2{grid-area: hanok2;} #grid-hanok3{grid-area: hanok3;} #grid-telescope{grid-area: telescope;} #grid-carts{grid-area: carts;}
+
+      @media only screen and (max-width: 1440px) {
+        .environment-wrapper{
+        width: 100%;
+        display: grid;
+        grid-template: 'hanok1 hanok1'
+        'hanok2 hanok3';
+        }
+      }
+    </style>
+  </head>
+
+<body>
+  <div class="wrapper">
+    <div id="sidebar"><div id="sidebar-content"></div></div><div id="topbar"><div id="topbar-content"></div></div>
+    <div id="content">
+      <div class="environment-wrapper">
+        <div id="grid-hanok1" class="hoverscale"><a href="https://milaza_zo.artstation.com/projects/zPmvND"><img src="img\environment\environment_hanok01.webp" alt="image"/></a></div>
+        <div id="grid-hanok2"><img src="img\environment\environment_hanok02.webp" alt="image"/></div>
+        <div id="grid-hanok3"><img src="img\environment\environment_hanok03.webp" alt="image"/></div>
+      </div>
+    </div>
+  </div>
+ <script>
+    window.onload = function(){if(document.querySelector('.yBox')){var myYbox = new yBox();myYbox.init();};}
+ </script>
+</body>
+</html>
