@@ -10,12 +10,12 @@
 
     .section-wrapper{
       display: grid;
-      grid-template:'about links links'
-      'about button button'
-      'ext-links ext-links ext-links'
+      grid-template:'about about links'
+      'bookmarks bookmarks bookmarks';
+      grid-template-columns: 1fr 1fr 1fr;
     }
 
-    .grid-about{grid-area: about;} .grid-links{grid-area: links;} .grid-button{grid-area: button;} .grid-ext-links{grid-area: ext-links;}
+    .grid-about{grid-area: about;} .grid-links{grid-area: links;} .grid-button{grid-area: button;} .grid-bookmarks{grid-area: bookmarks;}
 
     @media only screen and (max-width: 1440px) {
 
@@ -25,7 +25,7 @@
       grid-template:'about'
       'links'
       'button'
-      'ext-links'
+      'bookmarks'
       }
     }
   </style>
@@ -35,17 +35,25 @@
     <div id="content">
     <div class="section-wrapper">
         <div class="box grid-about"><div class="section">about</div>
-            i'll update this later
+            andrew, 20+ year old guy from new zealand. i like stylized PBR in 3D art and semi-realistic-anime-something in 2D. my favorite idols are genbu kurono and amana osaki. fighting games are really cool, but i'm bad at playing them!
+            <br><br>contact on <a href="https://milaza_zo.artstation.com"><b>artstation</b></a> or at <b>andrew@milaza.art</b>.
+            <br>other sites are not checked actively.
             </div>
         <div class="box grid-links"><div class="section">links</div>
-        tba...
+        <div class="button-wrapper" style="text-align:center;grid-template-columns: 1fr 1fr 1fr;">
+          <a href="https://www.twitter.com/milaza_zo" class="button-grey"><img src="img\icon\twitter.png" style="width:25px"></a>
+          <a href="https://milaza.tumblr.com" class="button-grey"><img src="img\icon\tumblr.png" style="width:25px"></a>
+          <a href="https://www.instagram.com/milaza_zo" class="button-grey"><img src="img\icon\instagram.png" style="width:25px"></a>
+          <a href="https://www.pixiv.net/en/users/15196346/artworks" class="button-grey"><img src="img\icon\pixiv.png" style="width:25px"></a>
+          <a href="https://milaza_zo.artstation.com" class="button-grey"><img src="img\icon\artstation.png" style="width:25px"></a>
+          <a href="https://sketchfab.com/milaza" class="button-grey"><img src="img\icon\sketchfab.png" style="width:25px"></a>
+        </div>
+        <div style="text-align: center; margin-top: 0.5em;">
+          <img src="img/banner.png">
+        </div>
             </div>
 
-        <div class="box grid-button"><div class="section">buttons</div>
-            <p>tba :]</p>
-            </div>
-
-        <div class="box grid-ext-links"><div class="section">external links</div>
+        <div class="box grid-bookmarks"><div class="section">bookmarks</div>
           <p>
             <b>FAVORITE SITES</b>
             <ul>
@@ -72,16 +80,6 @@
             <ul>
                 <li><b><a href="https://2dwillneverdie.com/tutorial/">2D WILL NEVER DIE</a>:</b> Website that hosts many tutorials and tips on sprite art, specicially for fighting games.</li>
                 <li><b><a href="https://www.gamedeveloper.com/production/art-design-deep-dive-using-a-3d-pipeline-for-2d-animation-in-i-dead-cells-i-">Art Design Deep Dive: Using a 3D pipeline for 2D animation in Dead Cells</a>:</b> An article showing how 3D models can be used for 2D sprite animation.</li>
-            </ul>
-            <b>Sound:</b>
-            <ul>
-                <li><b><a href="https://soundimage.org/">Sound Image</a>:</b> Free music and audio for use in games.</li>
-            </ul>
-            <b>Textures:</b>
-            <ul>
-                <li><b><a href="http://www.cadhatch.com/seamless-textures/4588167680">CADHatch</a>:</b> Free seamless textures for use in games.</li>
-                <li><b><a href="https://lostandtaken.com/">Lost and Taken</a>:</b> Free stock photos.</li>
-                <li><b><a href="http://texturer.com/">Texturer</a>:</b> Free stock photos.</li>
             </ul>
           </p>
       </div>
