@@ -4,6 +4,7 @@
     <title>archive</title>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <script src="jquery.js"></script><script src="index.js"></script>
+    <link rel="stylesheet" href="dist/css/yBox.min.css"><script src="dist/js/directive.js"></script><script src="dist/js/yBox.min.js"></script>
     <link rel="stylesheet" href="style.css">
   <style>
     #content{width: 70%;}
@@ -11,7 +12,7 @@
     /* ------ SPACING ------*/
 
     .box img{
-        height: 20vh;
+        width: 100%;
         display: block;
         margin-left: auto;
         margin-right: auto;
@@ -26,6 +27,7 @@
     'sidemtl sidemtl sidemtl tgaacollab tgaacollab tgaacollab'
     'touchdown touchdown flowerstand flowerstand songforreason songforreason'
     'misc misc misc misc misc misc';
+    grid-template-columns: 16.66% 16.66% 16.66% 16.66% 16.66% 16.66%;
   }
 
   .grid-dojinshi{grid-area: dojinshi;}
@@ -46,13 +48,6 @@
     margin-bottom: 0.25em;
   }
 
-  @media only screen and (min-width: 1440px) {
-
-    .grid-touchdown img, .grid-flowerstand img, .grid-songforreason img{
-      height: 12vh;
-    }
-    }
-
   @media only screen and (max-width: 1440px) {
 
     #content{width: 100%;}
@@ -66,10 +61,6 @@
     'flowerstand'
     'songforreason'
     'misc';
-    }
-
-    .grid-touchdown img{
-      height: 12vh;
     }
 
     #dojinshi-benbaro{
@@ -101,20 +92,20 @@
             fanbook for eyeshield 21's 20th anniversary. i handled graphics, formatting, art organization, and drew fill-in art. <a href="https://es21fanzine.carrd.co">carrd.</a></p>
             </div>
         <div class="box grid-flowerstand"><div class="section">sideM international flowerstand (2019)</div>
-        <img src="img/project_flowerstand.webp">
+        <a href="img/project_flowerstand.webp" class="yBox" data-ybox-group="group1"><img src="img/project_flowerstand.webp" alt="image" /></a>
           <p>flowerstand for the 2019 idolmaster sideM live. i drew shinsoku, s.e.m, f-lags, and legenders. knowing that my favorite voice actors saw it makes me the happiest P in the world!!!</p>
             </div>
         <div class="box grid-songforreason"><div class="section">song for re@son (2018)</div>
-        <img src="img/project_songforreason.webp">
+        <a href="img/project_songforreason.webp" class="yBox" data-ybox-group="group1"><img src="img/project_songforreason.webp" alt="image" /></a>
             fanbook for the idolmaster sideM. for some reason, i drew a bunch... i was able to do page artwork for shinsoku and jupiter. i also wound up designing the cover and producing it with <a href="https://www.twitter.com/swan___lake">izzy</a>.
             </div>
         <div class="box grid-misc"><div class="section">miscellaneous</div>
-            occasionally there is participation in fanbooks as a comic artist/illustrator (<a href="https://www.twitter.com/opfoodzine">feast</a>, <a href="https://www.twitter.com/pinopzine">pinop</a>, <a href="https://www.twitter.com/aatarot">turnabout tarot</a>, etc.). other projects i'm working on in the meanwhile:
+            i table at overload annually and for some reason force myself to make a new dojinshi each time as if i'm a comiket artist. occasionally i draw for other zine-type projects (<a href="https://www.twitter.com/opfoodzine">feast</a>, <a href="https://www.twitter.com/aatarot">turnabout tarot</a>, etc.) too. other things i'll get around to eventually:
             <ul>
-              <li>dgs dogboy anthology (planning)</li>
-              <li>sideM 10th anniversary artbook (planning)</li>
-              <li>horace knightley fangame (script done, someday i'll get around to making it)</li>
-              <li>[...] barok van zieks comic anthology (i'll leave this for 2024)</li>
+              <li>dgs dogboy anthology (planning; estimated september 2023 start)</li>
+              <li>sideM 10th anniversary artbook (planning; estimated november 2023 start)</li>
+              <li>van zieks [...] anthology (estimated spring 2024 start)</li>
+              <li>horace knightley fangame (i'm never starting this actualy)</li>
             </ul>
         </div>
     </div>

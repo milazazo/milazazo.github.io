@@ -18,3 +18,11 @@ $(function(){
   $("#topbar-content").load("menumobile.html"); 
 });
   
+// YBOX
+
+window.onload = function(){
+  if(document.querySelector('.yBox')){
+      var myYbox = new yBox();
+      myYbox.init();
+  };
+}
