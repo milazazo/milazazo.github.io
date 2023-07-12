@@ -224,11 +224,14 @@ overflow-y: auto;
 
 .hoverscale img{
   scale: 1;
-  transition: 0.2s;
+  transition: 0.2s ease-in-out;
+  opacity: 1;
 }
 
 .hoverscale img:hover{
   scale: 1.02;
+  opacity: 0.8;
+  
 }
 
 @media only screen and (max-width: 1440px) {
