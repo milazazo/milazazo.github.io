@@ -1,0 +1,85 @@
+<head>
+    <style>
+        body{
+            font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+        }
+
+        input {
+            width: 100%;
+            height: 6em;
+            padding: 12px;
+            border: 1px solid #ccc;
+            border-radius: 4px;
+        }
+
+        button{
+            background-color: #04AA6D;
+            color: white;
+            padding: 12px 20px;
+            border: none;
+            border-radius: 4px;
+            cursor: pointer;
+            font-size: 1.5em;
+            margin: 1em;
+        }
+
+        #content{
+            text-align: center;
+            width: 60%;
+            position: absolute;
+            top: 30%;
+            left: 50%;
+            -ms-transform: translate(-50%, -30%);
+            transform: translate(-50%, -30%);
+        }
+
+        @media screen and (max-width: 600px) {
+        #content {
+            width: 90%;
+        }
+        }
+    </style>
+
+</head>
+<body>
+    <div id="content">
+        <h1>Keyword Search Tool</h1>
+
+        <h2>Text</h2>
+        <input type="text" id="sample" value="Input full sample text here.">
+        <br>
+        <h2>Keywords</h2>
+        <input type="text" id="keywords" value="Input keywords here, separated by commas.">
+        <br>
+        <button onclick="inputKeywords()">Enter</button>
+    
+        <p>
+            <b style="color:red">Words that don't appear in this paragraph:</b>
+            <p id="no"></p>
+            <br>
+            <b style="color:green">Words that do appear in this paragraph:</b>
+            <p id="yes"></p>
+        </p>
+    </div>
+
+    <script>
+        
+        function inputKeywords() {
+        let text = document.getElementById("sample").value.toLowerCase();
+        var keywords = document.getElementById("keywords").value.toLowerCase();
+        const wordArray = keywords.split(',');
+        for (var i = 0; i < wordArray.length; i++) {
+            let word = wordArray[i];
+            let position = text.search(word);
+            console.log(position);
+            //Do something
+            if (position == -1){
+                document.getElementById("no").innerHTML += word + " ";
+            } else {
+                document.getElementById("yes").innerHTML += word + "   ";
+            }
+        }  
+        }
+
+    </script>
+</body>
