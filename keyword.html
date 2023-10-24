@@ -64,7 +64,6 @@
     </div>
 
     <script>
-        
         function inputKeywords() {
             document.getElementById("no").innerHTML = "";
             document.getElementById("yes").innerHTML = "";
@@ -74,8 +73,6 @@
         for (var i = 0; i < wordArray.length; i++) {
             let word = wordArray[i];
             let position = text.search(word);
-            console.log(position);
-            //Do something
             if (position == -1){
                 document.getElementById("no").innerHTML += word + " ";
             } else {
@@ -83,6 +80,5 @@
             }
         }  
         }
-
     </script>
 </body>
