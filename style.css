@@ -1,297 +1,49 @@
-/* ----- FONTS ------ */
+/* GENERAL */
 
-@import url('https://fonts.googleapis.com/css?family=Zen+Antique&display=swap');
-@import url('https://fonts.googleapis.com/css?family=Zen+Maru+Gothic&display=swap');
-/* ----- TOOLTIP ------ */
-.tt {
-  position: relative;
-  display: inline-block;
-  border-bottom: 1px dotted black;
-}
-
-.tt .ttt {
-  visibility: hidden;
-  background-color: black;
-  width:150px;
-  color: #fff;
-  text-align: center;
-  padding: 5px;
-  border-radius: 6px;
-  position: absolute;
-  z-index: 1;
-  bottom: 100%;
-  left: 50%;
-  margin-left: -60px;
-}
-
-.tt .ttt img {
-  width:150px;
-}
-
-.tt .ttt::after {
-  content: " ";
-  position: absolute;
-  top: 100%;
-  left: 50%;
-  margin-left: -5px;
-  border-width: 5px;
-  border-style: solid;
-  border-color: black transparent transparent transparent;
-}
-
-.tt:hover .ttt {
-  visibility: visible;
-  
-}
-
-/* ----- SCROLLBAR ------ */
-
-::-webkit-scrollbar {
-  width: 10px;
-}
-
-::-webkit-scrollbar-track {
-  background: none; 
-}
-
-::-webkit-scrollbar-thumb {
-  background: #c2c2c2; 
-}
-
-::-webkit-scrollbar-thumb:hover {
-  background: #868686; 
-}
-
-/* ------ button ------*/
-
-#hamburg{
-  font-size: 2em;
-  float:right;
-  transition: 0.5s;
-  color: white;
-}
-
-.button-wrapper{
-  display: grid;
-}
-
-.button-grey{
-  font-family: "Zen Antique", serif;
-  padding: 0.4em;
-  margin: 0.4em;
-  background-color:rgb(184, 184, 184);
-  color:white;
-  z-index: 5;
-  font-size: 1em;
-  border-radius: 5px;
-  transition: 0.5s;
-  text-align:center;
-}
-
-#sidebar .button-grey{
-  padding: 10px 5px 5px;
-  margin: 0.25em;
-}
-
-.button-grey:hover{
-  background-color:rgb(190, 26, 26);
-  color:white;
-}
-/* ------ table ------*/
-
-td, th{
-  padding:1vw;
-}
-
-/* ------ text styling ------*/
-
-
-h1 {
-  font-family: "Zen Antique", serif;
-  color:rgb(56, 148, 190);
-  margin-left: 0.5em;
-}
-
-h2 {
-  font-size: 2em;
-  font-family: "Zen Antique", serif;
-  color:rgb(56, 148, 190);
-  margin-left: 0.5em;
-  border-bottom: 1px solid;
-}
-
-ul {
-  list-style-type: none;
-  padding-left: 1.5em;
-  margin-top: 0.5em;
-}
-
-li:before{
-  content: "\2727   ";
-  font-family: Arial, Helvetica, sans-serif;
-  color: rgb(56, 148, 190);
-}
-
-#sidebar a, .tt {
-  border-bottom: none;
-  font-size: 1em;
-}
-
-.section{
-    font-size:1.3em;
-    font-weight: bold;
-    padding: 0.25em .5em;
-    color:white;
-    max-width:100%;
-    margin-bottom:0.5em;
-    font-family: "Zen Antique", serif;
-    background: rgb(56,148,190);
-    border-top-right-radius: 10px;
-    border-bottom-left-radius: 10px;
-}
-
-.box{
-  padding: 1em;
-  margin: 1em;
-  background-color:rgb(231, 231, 231);
-  border-top-right-radius: 10px;
-  border-bottom-left-radius: 10px;
-}
-
-#topbar h1{
-  font-size: 1em;
-  color:rgb(56, 148, 190);
+.mobile-only{
+    display: none;
 }
 
 body{
-  font-size: 1em;
-  overflow:hidden;
-  font-family: "Zen Maru Gothic";
-}
-
-a{
-    color: rgb(190, 26, 26);
-    border-bottom: 1px dotted;
-    text-decoration: none;
-}
-
-a:hover{
-  color: rgb(56, 148, 190);
+    background-color: #FFFFFF;
+    font-family: "DM Sans", Arial, Helvetica, sans-serif;
 }
 
 b{
-  color: rgb(56, 148, 190);
+    color: #3894be;
+}
+
+h1{
+    color: #3894be;
+    font-family: "DM Sans";
 }
 
 hr{
-  height:1px;
-  border-width:0;
-  color:rgb(56,148,190);
-  background-color:rgb(56,148,190);
+    border-style: dotted;
 }
 
-
-/* ------ other ------ */
-
-.wrapper{
-  position: absolute;
-  top: 0;
-  left: 0;
-  display: grid;
-  height: 100vh;
-  grid-template-columns:1fr 4fr;
-  width: 100vw;
-  overflow: hidden;
+ul{
+    list-style: none;
+    padding-left: 20px;
 }
 
-#sidebar{
-  background-color:white;
-  padding:2vw;
-  position: sticky;
-  top: 0;
-  height: 100vh;
-  box-sizing: border-box;
+ul li::before{
+    content: "✦ ";
+    color: #3894be;
 }
 
-#topbar{
-  display:none;
+.gray{
+    filter: grayscale(100);
 }
 
-#content{
-text-align: left;
-overflow-y: auto;
-}
+@media screen and (max-width: 1080px) {
+    html, body {
+        max-width: 100%;
+        overflow-x: hidden;
+    }
 
-.hoverscale img{
-  scale: 1;
-  transition: 0.2s ease-in-out;
-  opacity: 1;
-}
+    .mobile-only{
+        display: block;
+    }
 
-.hoverscale img:hover{
-  scale: 1.02;
-  opacity: 0.8;
-  
-}
-
-@media only screen and (max-width: 1440px) {
-
-  .button-wrapper{
-    display:grid;
-    grid-template-columns:1fr 1fr;
-  }
-
-  .button-grey{
-    font-size:30px;
-  }
-
-  #splash h1{
-    display:none;
-  }
-
-  #content{
-    text-align: left;
-    padding-bottom: 10vh;
-  }
-
-  .wrapper{
-    display: grid;
-    grid-template-columns:1fr;
-  }
-
-  #sidebar{
-    background-color:white;
-    display:none;
-  }
-
-  #topbar{
-    display: block;
-    background: rgb(56,148,190);
-    background: linear-gradient(360deg, rgba(56,148,190,1) 30%, rgba(56,190,175,1) 100%);
-    color: white;
-    padding-left: 3vw;
-    padding-right: 3vw;
-    text-align: left;
-  }
-
-  #topbar h1 a{
-    color: white;
-    font-size: 2.5em;
-    transition: 0.5s;
-    border-bottom: none;
-  }
-
-  #topbar b{
-    color: white;
-  }
-
-  #topbar a{
-    color: white;
-    border-bottom: none;
-    transition: 0.3s;
-  }
-
-  #topbar a:hover{
-    color: rgb(190, 26, 26);
-  }
 }

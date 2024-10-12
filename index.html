@@ -1,154 +1,182 @@
 <!DOCTYPE html>
 <head>
-  <title>milaza.art</title>
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <script src="jquery.js"></script><script src="index.js"></script>
-  <link rel="stylesheet" href="style.css">
-<style>
-  h1 {
-  font-size: 1em;
-  }
+    <title>milaza</title>
+    <meta charset="UTF-8">
+    <meta name="description" content="homepage of milaza, artist from auckland! 3D modeler/illustrator/comic artist/etc.">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css"/> <!-- main stylesheet -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Darumadrop+One&display=swap" rel="stylesheet">
 
-  /* ------ SPLASH ------*/
+    <style>
+        #main{
+            position: absolute;
+            top: 5em;
+            left: 5%;
+            width: 70%;
+            height: 70%;
+            border: 1px solid #3894be;
+            background-image: url("banner.jpg");
+            background-position: center;
+            background-repeat: no-repeat;
+            background-size: cover;
+        }
 
-  #splash {
-    position:relative;
-    width: 100%;
-    color:white;
-    font-size:80px;
-  }
+        #main h1{
+            position: absolute;
+            display: block;
+            z-index: 5;
+            top: -1.4em;
+            left: 2%;
+            font-size: 6em;
+            text-shadow: 4px 0px 0 #FFF
+        }
 
-  #splash img{
-    width:100%;
-  }
+        #about{
+            position: relative;
+            top: 2em;
+            left: 2em;
+            width: 40%;
+            border: 1px solid #3894be;
+            padding: 0.2em 1em 0.2em 1em;
+            background-color: #ffffffa5;
+        }
 
-  #splash h1{
-    position: absolute;
-    bottom: -2px;
-    right: 16px;
-    margin:0px;
-    color:white;
-  }
+        #menu{
+            position: absolute;
+            top: 10%;
+            left: 72.5%;
+            width: 100px;
+        }
 
-  /* ------ SLIDESHOW ------*/
+        .menu-item{
+            display: block;;
+            padding: 1em;
+            margin: 0.5em;
+            width: 100px;
+            background-color: #3894be;
+            color: white;
+            text-decoration: none;
+        }
 
-  .slideshow {display: none;}
+        .menu-item:hover{
+            background-color: #be1a1a;
+            transition: 0.3s;
+        }
 
-  .fade {
-    -webkit-animation-name: fade;
-    -webkit-animation-duration: 1.5s;
-    animation-name: fade;
-    animation-duration: 1.5s;
-  }
+        #buttons{
+            position: absolute;
+            top: 80%;
+            left: 5%;
+        }
 
-  @-webkit-keyframes fade {
-    from {opacity: 0.8} 
-    to {opacity: 1}
-  }
+        .button-item{
+            display: inline-block;
+        }
 
-  @keyframes fade {
-    from {opacity: 0.8} 
-    to {opacity: 1}
-  }
+        .button-social{
+            display: inline-block;
+            height: 40px;
+            background-color: #3894be;
+        }
 
-    /* ------ SPACING ------*/
+        .button-social img{
+            height: 100%;
+        }
 
-  .section-wrapper{
-    display:grid;
-    grid-template-columns: 1fr 2fr;
-  }
+        .button-social:hover{
+            background-color: #be1a1a;
+            transition: 0.3s;
+        }
+        
+    @media screen and (max-width: 1080px) {
 
-  #updates{
-    max-height: 18vh;
-    overflow-y: auto;
-  }
+        #main{
+            top: 0em;
+            left: 0%;
+            width: 100%;
+            height: 30%;
+            border: 1px solid #3894be;
+            background-image: url("banner.jpg");
+        }
 
-  .button-wrapper{
-    grid-template-columns:1fr 1fr 1fr 1fr;
-  }
-  @media only screen and (max-width: 1440px) {
-    .section-wrapper{
-    display:grid;
-    grid-template-columns: 1fr;
-    margin-bottom: 1vh;
+        #main h1{
+            position: relative;
+            display: block;
+            top: 65%;
+            left: 2%;
+            font-size: 4em;
+        }
+
+        #about{
+            position: relative;
+            top: 50%;
+            left: 0em;
+            width: 80%;
+            margin-left: auto;
+            margin-right: auto;
+            border: none;
+            padding: 0.2em 1em 0.2em 1em;
+            background-color: #ffffffa5;
+        }
+
+        #menu{
+            display: none;
+        }
+
+        #buttons{
+            display: none;
+        }
+
     }
-
-    #splash{
-      margin-top: 1vh;
-    }
-
-  }
-</style>
-<link rel="stylesheet" href="style.css">
-<script src="index.js"></script>
+    </style>
+</head>
 <body>
-  <div class="wrapper">
 
-    <!-- MENU -->
-    <div id="sidebar">
-      <div id="sidebar-content"></div>
+    <div id="main">
+        <h1>milaza.net</h1>        
+        <div id="about">
+            <p>homepage of <b>milaza</b>, 3D artist from auckland specialized in stylized environment art. enjoys illustration and comics on the side. loves idolmaster, superheroes, and pro wrestling too!</p>
+            <hr>
+            <ul>
+                <li><b>12/10/24:</b> finally updating website! still working on pages.</li>
+                <li><b>27/09/24:</b> planning a new idolmaster fanbook. more info TBA.</li>
+                <li><b>29/07/24:</b> drew a comic for <a href="https://x.com/genbarozine">gebaro anthology</a>.</li>
+            </ul>
+            <div class="mobile-only">
+                <hr>
+                <p>mobile website is still <b>under progress!</b></p>
+                <div style="text-align: center;">
+                <div class="button-item"><img src="https://files.catbox.moe/4e0fvy.png"></div>
+                <a class="button-item" href="https://barok.top/3630"><img src="https://files.catbox.moe/u8i2d7.png"></a>
+                <br>
+                <a class="button-social" href="https://www.twitter.com/milaza_zo"><img src="img/icon/twitter.png"></a>
+                <a class="button-social" href="https://milaza.tumblr.com"><img src="img/icon/tumblr.png"></a>
+                <a class="button-social" href="https://www.instagram.com/milaza_zo"><img src="img/icon/instagram.png"></a>
+                <a class="button-social" href="https://www.sketchfab.com/milaza"><img src="img/icon/sketchfab.png"></a>
+                <a class="button-social" href="https://www.pixiv.net/member_illust.php?id=15196346"><img src="img/icon/pixiv.png"></a>
+                </div>
+            </div>
+        </div>
     </div>
-    <div id="topbar">
-      <div id="topbar-content"></div>
+    <div id="menu">
+        <a class="menu-item gray" href="/">model</a>
+        <a class="menu-item gray" href="/">concept</a>
+        <a class="menu-item gray" href="/">illust</a>
+        <a class="menu-item gray" href="/">comic</a>
+        <a class="menu-item gray" href="/">event</a>
+        <a class="menu-item" href="https://drake.bearblog.dev">blog</a>
     </div>
-  
-    <div id="content">
-
-      <div id="splash">
-        <div class="slideshow fade">
-          <img src="img\splash_a.webp" style="width:100%">
-        </div>
-        
-        <div class="slideshow fade">
-          <img src="img\splash_b.webp" style="width:100%">
-        </div>
-        
-        <div class="slideshow fade">
-          <img src="img\splash_c.webp" style="width:100%">
-        </div>
-        <h1>milaza.art</h1>
-      </div>
-
-      <div class="section-wrapper">
-        <div class="box"><div class="section">about</div>
-        <b>andrew</b>, 3D artist from auckland specialized in stylized environment art. enjoys illustration and comics on the side. loves idolmaster, superheroes, and pro wrestling too!
-        </div>
-        <div class="box" id="updates"><div class="section">contact & updates</div>
-        <b>upcoming events:</b> overload 2024
-        <!--<b>13/07/23:</b> environment and concept sections have been updated. props tba.
-        <b>29/06/23:</b> environment and concept sections have been updated. props tba.
-        <br><b>06/05/23:</b> <a href="/archive">archive</a> section has been updated. i've started on the new <a href="https://tl.sidem.wiki">sideM translaton archive</a> but it won't be complete until mid-august at least due to irl commitments. dgs dogboy anthology is also planned for august.
-        <br><b>29/04/23:</b> finally updated my website a bit. <a href="/yuruzieks">yuruzieks</a> page has been added if you want to play with him. i'm currently working on <a href="https://tgaa.milaza.art">tgaa collab</a> in the background too!
-        <br><b>28/01/22:</b> the site went down for a while, but it's back up! ...and didn't change at all.
-        <br><b>05/09/21:</b> website established!-->
-        </div>
-      </div><!--
-      <div class="button-wrapper" style="text-align:center;">
-        <a href="https://www.twitter.com/milaza_zo" class="button-grey"><img src="img\icon\twitter.png" style="width:25px"></a>
-        <a href="https://www.instagram.com/milaza_zo" class="button-grey"><img src="img\icon\instagram.png" style="width:25px"></a>
-        <a href="https://milaza_zo.artstation.com" class="button-grey"><img src="img\icon\artstation.png" style="width:25px"></a>
-        <a href="https://sketchfab.com/milaza" class="button-grey"><img src="img\icon\sketchfab.png" style="width:25px"></a>
-      </div>-->
+    <div id="buttons">
+        <div class="button-item"><img src="https://files.catbox.moe/4e0fvy.png"></div>
+        <a class="button-item" href="https://barok.top/3630"><img src="https://files.catbox.moe/u8i2d7.png"></a>
+        <a class="button-social" href="https://www.twitter.com/milaza_zo"><img src="img/icon/twitter.png"></a>
+        <a class="button-social" href="https://milaza.tumblr.com"><img src="img/icon/tumblr.png"></a>
+        <a class="button-social" href="https://www.instagram.com/milaza_zo"><img src="img/icon/instagram.png"></a>
+        <a class="button-social" href="https://www.sketchfab.com/milaza"><img src="img/icon/sketchfab.png"></a>
+        <a class="button-social" href="https://www.pixiv.net/member_illust.php?id=15196346"><img src="img/icon/pixiv.png"></a>
     </div>
-  </div>
-</div>
-
-<script>
-    var slideIndex = 0;
-  showSlides();
-  
-  function showSlides() {
-    var i;
-    var slides = document.getElementsByClassName("slideshow");
-    for (i = 0; i < slides.length; i++) {
-      slides[i].style.display = "none";  
-    }
-    slideIndex++;
-    if (slideIndex > slides.length) {slideIndex = 1}    
-    slides[slideIndex-1].style.display = "block";  
-    setTimeout(showSlides, 4000); // Change image every 2 seconds
-  }
-</script>
 
 </body>
-</html>
